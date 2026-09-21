@@ -1,120 +1,2923 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Portfolio of Aseer Hamim Mahi — CSE student, mobile app and frontend developer.">
-<title>Aseer Hamim Mahi | Portfolio</title>
-<style>
-:root{
-  --bg:#070a12;--surface:#0e1422;--surface2:#121a2b;--text:#f5f7fb;--muted:#a9b3c7;
-  --line:rgba(255,255,255,.09);--accent:#7c5cff;--accent2:#23d5ab;--max:1160px;
+  <!-- ============================================================
+     ASEER HAMIM MAHI · "THE DISPATCHES"
+     A risograph-printed developer folio. Single-file.
+     ============================================================ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <title>Aseer Hamim Mahi · Software Developer &amp; CSE Student, Dhaka</title>
+  <meta name="description"
+    content="The Dispatches · portfolio of Aseer Hamim Mahi. Computer Science &amp; Engineering student at East West University, Dhaka. Mobile app developer, frontend engineer, real-time systems builder." />
+  <meta name="keywords"
+    content="Aseer Hamim Mahi, aseerhamim, portfolio, CSE student, East West University, mobile developer Dhaka, frontend developer Bangladesh, Android developer, Java, JavaScript, Node.js, MongoDB, Firebase" />
+  <meta name="author" content="Aseer Hamim Mahi" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#EBE4D2" />
+  <meta name="color-scheme" content="light" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://aseerhamim.dev/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:site_name" content="Aseer Hamim Mahi" />
+  <meta property="og:url" content="https://aseerhamim.dev/" />
+  <meta property="og:title" content="Aseer Hamim Mahi · Software Developer &amp; CSE Student" />
+  <meta property="og:description"
+    content="The Dispatches · a risograph-printed folio of selected work, skills, and correspondence from Dhaka." />
+  <meta property="og:image" content="https://i.ibb.co/b9YTQhj/mahir.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="1500" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Aseer Hamim Mahi · Software Developer" />
+  <meta name="twitter:description" content="The Dispatches · portfolio of a CSE student and developer from Dhaka." />
+  <meta name="twitter:image" content="https://i.ibb.co/b9YTQhj/mahir.jpg" />
+
+  <!-- Favicon (inline SVG, riso palette) -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23EBE4D2'/%3E%3Ccircle cx='24' cy='32' r='14' fill='%23D6462F' opacity='.9'/%3E%3Ccircle cx='40' cy='32' r='14' fill='%232B4A8F' opacity='.85'/%3E%3Ctext x='32' y='40' font-family='Georgia,serif' font-size='26' font-style='italic' text-anchor='middle' fill='%2317140F'%3EA%3C/text%3E%3C/svg%3E" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://i.ibb.co" crossorigin />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&family=JetBrains+Mono:wght@400;500;700&display=swap" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://aseerhamim.dev/#person",
+      "name": "Aseer Hamim Mahi",
+      "givenName": "Aseer",
+      "familyName": "Mahi",
+      "jobTitle": "Software Developer & CSE Student",
+      "url": "https://aseerhamim.dev/",
+      "email": "mailto:aseerhamim1993@gmail.com",
+      "telephone": "+8801618894286",
+      "image": "https://i.ibb.co/b9YTQhj/mahir.jpg",
+      "address": { "@type": "PostalAddress", "addressLocality": "Dhaka", "addressCountry": "BD" },
+      "alumniOf": { "@type": "CollegeOrUniversity", "name": "East West University" },
+      "knowsAbout": ["Mobile Application Development","Frontend Web Development","Database Management","Real-time Systems","Java","JavaScript","Node.js","MongoDB","Firebase"],
+      "sameAs": [
+        "https://github.com/aseerhamim",
+        "https://www.linkedin.com/in/aseerhamim"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://aseerhamim.dev/#site",
+      "url": "https://aseerhamim.dev/",
+      "name": "Aseer Hamim Mahi · The Dispatches",
+      "publisher": { "@id": "https://aseerhamim.dev/#person" }
+    }
+  ]
 }
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:
-radial-gradient(circle at 85% 10%,rgba(124,92,255,.18),transparent 28rem),
-radial-gradient(circle at 10% 35%,rgba(35,213,171,.08),transparent 25rem),var(--bg);
-color:var(--text);line-height:1.65}
-a{color:inherit;text-decoration:none}.container{width:min(calc(100% - 40px),var(--max));margin:auto}
-nav{position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(7,10,18,.72);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
-.nav{height:76px;display:flex;align-items:center;justify-content:space-between}
-.logo{font-weight:800;letter-spacing:-.04em;font-size:1.1rem}.logo span{color:var(--accent)}
-.links{display:flex;gap:28px;color:var(--muted);font-size:.92rem}.links a:hover{color:white}
-.hero{min-height:100vh;display:grid;place-items:center;padding-top:90px}
-.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:70px;align-items:center}
-.kicker{color:var(--accent2);font-weight:700;letter-spacing:.13em;text-transform:uppercase;font-size:.78rem;margin-bottom:18px}
-h1{font-size:clamp(3rem,7vw,6.2rem);line-height:.98;letter-spacing:-.07em;max-width:800px}
-h1 em{font-style:normal;background:linear-gradient(100deg,#fff 10%,#a991ff 55%,#5fe5c5);-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero p{margin:25px 0 30px;color:var(--muted);font-size:1.08rem;max-width:670px}
-.buttons{display:flex;gap:12px;flex-wrap:wrap}.btn{padding:12px 19px;border:1px solid var(--line);border-radius:12px;font-weight:700;font-size:.9rem}
-.btn.primary{background:var(--text);color:#080b12;border-color:white}.btn:hover{transform:translateY(-2px)}
-.profile-card{background:linear-gradient(145deg,rgba(255,255,255,.08),rgba(255,255,255,.025));border:1px solid var(--line);border-radius:28px;padding:28px;box-shadow:0 25px 80px rgba(0,0,0,.35)}
-.avatar{height:240px;border-radius:20px;display:grid;place-items:center;background:
-linear-gradient(135deg,rgba(124,92,255,.85),rgba(35,213,171,.45));font-size:5rem;font-weight:900;letter-spacing:-.08em}
-.card-meta{display:flex;justify-content:space-between;gap:10px;margin-top:20px}.card-meta small{color:var(--muted)}
-section{padding:105px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:42px}
-.eyebrow{color:var(--accent);font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.14em}
-h2{font-size:clamp(2rem,4vw,3.4rem);letter-spacing:-.055em;line-height:1.05;margin-top:8px}.section-head p{max-width:430px;color:var(--muted)}
-.about{display:grid;grid-template-columns:1fr 1fr;gap:24px}.panel{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:28px}.panel p{color:var(--muted)}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}.stat{padding:20px;border-radius:16px;background:var(--surface2);border:1px solid var(--line)}.stat strong{font-size:1.7rem}.stat span{display:block;color:var(--muted);font-size:.8rem}
-.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.project{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:25px;display:flex;flex-direction:column;min-height:390px;transition:.25s}.project:hover{transform:translateY(-5px);border-color:rgba(124,92,255,.5)}
-.project-num{font-size:.75rem;color:var(--accent2);font-weight:800}.project h3{font-size:1.35rem;margin:28px 0 8px;line-height:1.2}.project .type{color:var(--muted);font-size:.85rem;margin-bottom:18px}.project p{color:var(--muted);font-size:.92rem}.tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:auto;padding-top:24px}.tag{font-size:.72rem;padding:5px 9px;border-radius:999px;background:#182238;color:#cbd4e7}
-.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.skillbox{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:25px}.skillbox h3{margin-bottom:14px}.chips{display:flex;flex-wrap:wrap;gap:8px}.chip{border:1px solid var(--line);padding:7px 11px;border-radius:10px;color:#d7ddec;font-size:.82rem;background:rgba(255,255,255,.025)}
-.timeline{border-left:1px solid var(--line);margin-left:9px;padding-left:30px}.role{position:relative;margin-bottom:38px}.role:before{content:"";position:absolute;width:10px;height:10px;border-radius:50%;background:var(--accent);left:-36px;top:9px;box-shadow:0 0 0 6px var(--bg)}.role h3{font-size:1.2rem}.role .date{color:var(--accent2);font-size:.8rem;font-weight:700}.role p{color:var(--muted);margin-top:8px}
-.edu{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.edu-card{padding:23px;background:var(--surface);border:1px solid var(--line);border-radius:18px}.edu-card h3{font-size:1rem}.edu-card p{color:var(--muted);font-size:.87rem;margin-top:6px}
-.contact{background:linear-gradient(135deg,rgba(124,92,255,.15),rgba(35,213,171,.07));border:1px solid var(--line);border-radius:28px;padding:45px;display:flex;align-items:center;justify-content:space-between;gap:30px}.contact p{color:var(--muted);margin-top:8px}.contact a{display:inline-block;margin-top:18px}
-footer{padding:35px 0;color:#737d92;border-top:1px solid var(--line);font-size:.82rem}
-@media(max-width:850px){.hero-grid,.about,.projects,.skills,.edu{grid-template-columns:1fr}.hero{padding-top:120px}.links{display:none}.profile-card{max-width:500px}.section-head{display:block}.section-head p{margin-top:15px}.contact{display:block}}
-</style>
+</script>
+
+  <style>
+    /* ============================================================
+   TOKENS
+   ============================================================ */
+    :root {
+      --paper: #EBE4D2;
+      --paper-2: #F2ECDC;
+      --paper-3: #DFD6BE;
+      --ink: #17140F;
+      --ink-2: #3B342B;
+      --ink-3: #6B6256;
+      --ink-4: #9A9083;
+      --rule: #17140F;
+      --rule-soft: rgba(23, 20, 15, .22);
+      --rule-hair: rgba(23, 20, 15, .13);
+
+      --red: #D6462F;
+      --blue: #2B4A8F;
+      --gold: #C8942C;
+
+      --f-display: "Instrument Serif", "Times New Roman", Times, serif;
+      --f-body: "Newsreader", Georgia, "Times New Roman", serif;
+      --f-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+      --col: min(calc(100% - 48px), 1280px);
+      --edge: clamp(20px, 4vw, 48px);
+    }
+
+    /* ============================================================
+   RESET
+   ============================================================ */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      -webkit-text-size-adjust: 100%;
+      scroll-behavior: smooth;
+    }
+
+    @media (prefers-reduced-motion:reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
+
+    body {
+      font-family: var(--f-body);
+      font-optical-sizing: auto;
+      font-size: clamp(1rem, .95rem + .25vw, 1.125rem);
+      line-height: 1.55;
+      color: var(--ink);
+      background: var(--paper);
+      background-image:
+        radial-gradient(circle at 22% 18%, rgba(214, 70, 47, .035), transparent 45%),
+        radial-gradient(circle at 78% 82%, rgba(43, 74, 143, .04), transparent 50%);
+      font-feature-settings: "kern", "liga", "onum", "ss01";
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      overflow-x: clip;
+    }
+
+    img,
+    svg {
+      display: block;
+      max-width: 100%;
+    }
+
+    button {
+      font: inherit;
+      color: inherit;
+      background: none;
+      border: 0;
+      cursor: pointer;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ::selection {
+      background: var(--red);
+      color: var(--paper-2);
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--blue);
+      outline-offset: 3px;
+      border-radius: 1px;
+    }
+
+    /* ============================================================
+   GRAIN OVERLAY
+   ============================================================ */
+    .grain {
+      position: fixed;
+      inset: 0;
+      z-index: 1000;
+      pointer-events: none;
+      opacity: .09;
+      mix-blend-mode: multiply;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='180' height='180' filter='url(%23n)'/></svg>");
+    }
+
+    /* ============================================================
+   SKIP LINK
+   ============================================================ */
+    .skip {
+      position: absolute;
+      left: -9999px;
+      top: 0;
+      z-index: 2000;
+      padding: 12px 20px;
+      background: var(--ink);
+      color: var(--paper-2);
+      font-family: var(--f-mono);
+      font-size: .75rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .skip:focus {
+      left: 12px;
+      top: 12px;
+    }
+
+    /* ============================================================
+   UTILITIES
+   ============================================================ */
+    .wrap {
+      width: var(--col);
+      margin-inline: auto;
+      padding-inline: 0;
+    }
+
+    .rule {
+      height: 1px;
+      background: var(--rule);
+    }
+
+    .rule-thick {
+      height: 3px;
+      background: var(--rule);
+    }
+
+    .rule-hair {
+      height: 1px;
+      background: var(--rule-hair);
+    }
+
+    .mono {
+      font-family: var(--f-mono);
+      font-size: .7rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    .smallcaps {
+      font-family: var(--f-mono);
+      font-size: .72rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--ink-3);
+    }
+
+    /* ============================================================
+   MASTHEAD
+   ============================================================ */
+    .masthead {
+      position: relative;
+      padding: 0 var(--edge);
+      overflow: hidden;
+    }
+
+    .ticker {
+      border-bottom: 1px solid var(--rule);
+      overflow: hidden;
+      background: var(--ink);
+      color: var(--paper-2);
+      padding: 6px 0;
+    }
+
+    .ticker-track {
+      display: flex;
+      gap: 2rem;
+      width: max-content;
+      font-family: var(--f-mono);
+      font-size: .66rem;
+      font-weight: 500;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      animation: slide 42s linear infinite;
+    }
+
+    .ticker-track:hover {
+      animation-play-state: paused;
+    }
+
+    .ticker-track span {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .ticker-track span::after {
+      content: "";
+      width: 6px;
+      height: 6px;
+      background: var(--red);
+      display: inline-block;
+      border-radius: 50%;
+    }
+
+    .ticker-track span:last-child::after {
+      content: "";
+    }
+
+    @keyframes slide {
+      to {
+        transform: translateX(-50%);
+      }
+    }
+
+    .mast-name {
+      position: relative;
+      padding: clamp(24px, 4vw, 56px) 0 clamp(16px, 2.5vw, 36px);
+    }
+
+    .mast-name .leaf {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--rule-hair);
+      padding-bottom: 10px;
+      margin-bottom: clamp(16px, 3vw, 32px);
+      color: var(--ink-3);
+    }
+
+    .mast-name .leaf .reg {
+      width: 14px;
+      height: 14px;
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    .mast-name .leaf .reg::before,
+    .mast-name .leaf .reg::after {
+      content: "";
+      position: absolute;
+      background: var(--ink-3);
+    }
+
+    .mast-name .leaf .reg::before {
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      transform: translateX(-50%);
+    }
+
+    .mast-name .leaf .reg::after {
+      top: 50%;
+      left: 0;
+      right: 0;
+      height: 1px;
+      transform: translateY(-50%);
+    }
+
+    h1.name {
+      font-family: var(--f-display);
+      font-weight: 400;
+      font-size: clamp(3.6rem, 15vw, 14rem);
+      line-height: .86;
+      letter-spacing: -.035em;
+      color: var(--ink);
+    }
+
+    h1.name .line {
+      display: block;
+      position: relative;
+    }
+
+    h1.name .line--2 {
+      font-style: italic;
+      margin-left: clamp(20px, 8vw, 140px);
+      color: var(--red);
+    }
+
+    h1.name .line--3 {
+      margin-left: clamp(0px, 2vw, 40px);
+    }
+
+    h1.name .line--3::after {
+      content: "";
+      display: inline-block;
+      width: .14em;
+      height: .14em;
+      margin-left: .15em;
+      background: var(--blue);
+      border-radius: 50%;
+      vertical-align: top;
+      transform: translateY(.2em);
+    }
+
+    h1.name .line--1::before {
+      content: "№ 001";
+      position: absolute;
+      top: .15em;
+      right: 0;
+      font-family: var(--f-mono);
+      font-size: .12em;
+      font-weight: 500;
+      letter-spacing: .2em;
+      color: var(--ink-3);
+      font-style: normal;
+    }
+
+    .mast-meta {
+      border-top: 3px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+      padding: 14px 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 0;
+      font-family: var(--f-mono);
+      font-size: .66rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--ink-3);
+    }
+
+    .mast-meta>* {
+      padding: 0 18px;
+      border-right: 1px solid var(--rule-hair);
+    }
+
+    .mast-meta>*:first-child {
+      padding-left: 0;
+    }
+
+    .mast-meta>*:last-child {
+      border-right: 0;
+      padding-right: 0;
+      text-align: right;
+      color: var(--red);
+    }
+
+    .mast-meta b {
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    /* ============================================================
+   STICKY MINI-BAR
+   ============================================================ */
+    .mini {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 900;
+      background: var(--paper-2);
+      border-bottom: 1px solid var(--rule);
+      transform: translateY(-101%);
+      transition: transform .35s cubic-bezier(.2, .8, .2, 1);
+      will-change: transform;
+    }
+
+    .mini.on {
+      transform: none;
+    }
+
+    .mini-in {
+      width: var(--col);
+      margin-inline: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 11px 0;
+    }
+
+    .mini-name {
+      font-family: var(--f-display);
+      font-size: 1.15rem;
+      font-style: italic;
+      letter-spacing: -.01em;
+    }
+
+    .mini-name::before {
+      content: "· ";
+      color: var(--red);
+      font-style: normal;
+    }
+
+    .mini-nav {
+      display: flex;
+      gap: 22px;
+      font-family: var(--f-mono);
+      font-size: .66rem;
+      font-weight: 500;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    .mini-nav a {
+      position: relative;
+      color: var(--ink-2);
+    }
+
+    .mini-nav a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      width: 0;
+      height: 1px;
+      background: var(--red);
+      transition: width .25s;
+    }
+
+    .mini-nav a:hover::after {
+      width: 100%;
+    }
+
+    .mini-nav a:hover {
+      color: var(--ink);
+    }
+
+    /* ============================================================
+   FRONT PAGE / LEAD
+   ============================================================ */
+    .lead {
+      padding: clamp(36px, 6vw, 80px) 0 clamp(30px, 5vw, 64px);
+      position: relative;
+    }
+
+    .lead-in {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: clamp(20px, 3vw, 44px);
+      align-items: start;
+    }
+
+    .lead-copy {
+      grid-column: 1 / span 7;
+    }
+
+    /* ---------- KICKER (bigger standing head) ---------- */
+    .lead-copy .kicker {
+      font-family: var(--f-mono);
+      font-size: clamp(1rem, .85rem + .55vw, 1.35rem);
+      font-weight: 500;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 26px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      line-height: 1.15;
+    }
+
+    .lead-copy .kicker::before {
+      content: "";
+      width: clamp(40px, 6vw, 72px);
+      height: 2px;
+      background: var(--red);
+      flex-shrink: 0;
+    }
+
+    .lead-copy p {
+      font-family: var(--f-body);
+      font-size: clamp(1.05rem, .92rem + .45vw, 1.28rem);
+      line-height: 1.5;
+      color: var(--ink-2);
+      text-wrap: pretty;
+      max-width: 56ch;
+    }
+
+    .lead-copy p+p {
+      margin-top: 1em;
+    }
+
+    .lead-copy p.intro {
+      font-size: clamp(1.15rem, .95rem + .7vw, 1.55rem);
+      line-height: 1.42;
+      color: var(--ink-2);
+      max-width: 48ch;
+    }
+
+    .lead-copy p.intro::first-letter {
+      font-family: var(--f-display);
+      font-size: 4.1em;
+      line-height: .82;
+      float: left;
+      padding: .08em .1em 0 0;
+      color: var(--red);
+      font-style: normal;
+    }
+
+    /* signature line */
+    .sig {
+      margin-top: 28px;
+      padding-top: 18px;
+      border-top: 1px solid var(--rule-hair);
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 20px;
+      flex-wrap: wrap;
+      font-family: var(--f-mono);
+      font-size: .66rem;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--ink-3);
+    }
+
+    .sig span:last-child {
+      font-family: var(--f-display);
+      font-style: italic;
+      font-size: 1.3rem;
+      letter-spacing: -.01em;
+      text-transform: none;
+      color: var(--red);
+    }
+
+    /* Right column: portrait + bulletin stacked */
+    .lead-side-col {
+      grid-column: 8 / span 5;
+      display: grid;
+      gap: 28px;
+      align-content: start;
+    }
+
+    /* ---------- PORTRAIT (right-sized) ---------- */
+    .portrait {
+      position: relative;
+      width: 100%;
+      max-width: 300px;
+      margin-inline: auto;
+    }
+
+    .portrait-frame {
+      position: relative;
+      display: block;
+      isolation: isolate;
+      border: 1px solid var(--rule);
+      background: var(--blue);
+      box-shadow: 8px 8px 0 var(--red);
+      overflow: hidden;
+      transition: box-shadow .35s ease, transform .35s ease;
+    }
+
+    .portrait-frame:hover {
+      transform: translate(-3px, -3px);
+      box-shadow: 11px 11px 0 var(--blue);
+    }
+
+    .portrait-frame img {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      object-position: 50% 22%;
+      filter: grayscale(1) contrast(1.15) brightness(1.02);
+      mix-blend-mode: luminosity;
+    }
+
+    .portrait-frame::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 78% 18%, rgba(214, 70, 47, .42), transparent 48%),
+        radial-gradient(circle at 15% 88%, rgba(214, 70, 47, .28), transparent 42%);
+      mix-blend-mode: screen;
+      pointer-events: none;
+    }
+
+    .portrait-caption {
+      margin-top: 14px;
+      padding-top: 10px;
+      border-top: 1px solid var(--rule);
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 10px;
+    }
+
+    .portrait-caption em {
+      font-family: var(--f-display);
+      font-style: italic;
+      font-size: 1rem;
+      color: var(--ink);
+      letter-spacing: -.005em;
+    }
+
+    .portrait-caption span {
+      font-family: var(--f-mono);
+      font-size: .58rem;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--ink-3);
+      white-space: nowrap;
+    }
+
+    /* ---------- BULLETIN ---------- */
+    .lead-side {
+      border: 1px solid var(--rule);
+      padding: 22px;
+      position: relative;
+      background: var(--paper-2);
+      width: 100%;
+      max-width: 420px;
+      margin-inline: auto;
+    }
+
+    .lead-side::before {
+      content: "BULLETIN";
+      position: absolute;
+      top: -9px;
+      left: 16px;
+      padding: 0 8px;
+      background: var(--paper);
+      font-family: var(--f-mono);
+      font-size: .62rem;
+      letter-spacing: .2em;
+      color: var(--ink-3);
+    }
+
+    .lead-side dl {
+      display: grid;
+      gap: 14px;
+    }
+
+    .lead-side dl>div {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 12px;
+      align-items: baseline;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--rule-hair);
+    }
+
+    .lead-side dl>div:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .lead-side dt {
+      font-family: var(--f-mono);
+      font-size: .66rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--ink-3);
+      white-space: nowrap;
+    }
+
+    .lead-side dd {
+      font-family: var(--f-display);
+      font-size: 1.35rem;
+      line-height: 1;
+      letter-spacing: -.02em;
+      text-align: right;
+    }
+
+    .lead-side dd small {
+      display: block;
+      font-family: var(--f-body);
+      font-size: .72rem;
+      font-style: italic;
+      color: var(--ink-3);
+      margin-top: 3px;
+    }
+
+    .lead-cta {
+      grid-column: 1 / span 12;
+      margin-top: 8px;
+      padding-top: 24px;
+      border-top: 1px solid var(--rule-hair);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 13px 22px;
+      border: 1px solid var(--rule);
+      background: var(--paper);
+      font-family: var(--f-mono);
+      font-size: .72rem;
+      font-weight: 500;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--ink);
+      transition: transform .18s ease, box-shadow .18s ease, background .18s, color .18s;
+      position: relative;
+    }
+
+    .btn:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: 4px 4px 0 var(--ink);
+    }
+
+    .btn--solid {
+      background: var(--ink);
+      color: var(--paper-2);
+    }
+
+    .btn--solid:hover {
+      box-shadow: 4px 4px 0 var(--red);
+    }
+
+    .btn--red {
+      background: var(--red);
+      color: var(--paper-2);
+      border-color: var(--red);
+    }
+
+    .btn--red:hover {
+      box-shadow: 4px 4px 0 var(--ink);
+    }
+
+    .btn .arr {
+      font-family: var(--f-body);
+      font-size: 1rem;
+      letter-spacing: 0;
+    }
+
+    /* ============================================================
+   SECTION HEADERS
+   ============================================================ */
+    section {
+      padding: clamp(48px, 7vw, 96px) 0;
+      position: relative;
+    }
+
+    section+section {
+      border-top: 1px solid var(--rule-hair);
+    }
+
+    .sec-head {
+      border-top: 3px solid var(--rule);
+      padding-top: 16px;
+      margin-bottom: clamp(30px, 4vw, 52px);
+    }
+
+    .sec-top {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      font-family: var(--f-mono);
+      font-size: .68rem;
+      font-weight: 500;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--ink-3);
+      margin-bottom: 22px;
+    }
+
+    .sec-num {
+      color: var(--red);
+      font-weight: 700;
+    }
+
+    .sec-cat {
+      color: var(--ink);
+    }
+
+    .sec-dot {
+      color: var(--ink-4);
+    }
+
+    .sec-folio {
+      margin-left: auto;
+      color: var(--ink-3);
+    }
+
+    .sec-bottom {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: clamp(20px, 3vw, 44px);
+      align-items: end;
+    }
+
+    .sec-title {
+      grid-column: 1 / span 8;
+      font-family: var(--f-display);
+      font-weight: 400;
+      font-size: clamp(2rem, 1.4rem + 3vw, 3.8rem);
+      line-height: 1.02;
+      letter-spacing: -.028em;
+      text-wrap: balance;
+    }
+
+    .sec-title em {
+      font-style: italic;
+      color: var(--red);
+    }
+
+    .sec-desc {
+      grid-column: 9 / span 4;
+      font-size: .95rem;
+      font-style: italic;
+      color: var(--ink-3);
+      text-wrap: pretty;
+      max-width: 38ch;
+      padding-bottom: .4em;
+    }
+
+    /* ============================================================
+   § 01 · LEDGER (About)
+   ============================================================ */
+    .ledger-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: clamp(20px, 3vw, 44px);
+      align-items: start;
+    }
+
+    .ledger-body {
+      grid-column: 1 / span 7;
+      font-size: 1.02rem;
+      color: var(--ink-2);
+      text-wrap: pretty;
+    }
+
+    .ledger-body p+p {
+      margin-top: 1.1em;
+    }
+
+    .ledger-body p:first-of-type::first-letter {
+      font-family: var(--f-display);
+      font-size: 3.6em;
+      line-height: .84;
+      float: left;
+      padding: .05em .08em 0 0;
+      color: var(--blue);
+    }
+
+    .ledger-body strong {
+      font-weight: 600;
+      color: var(--ink);
+      background: linear-gradient(180deg, transparent 62%, rgba(214, 70, 47, .22) 62%);
+    }
+
+    .ledger-aside {
+      grid-column: 9 / span 4;
+      display: grid;
+      gap: 22px;
+    }
+
+    .ledger-quote {
+      border-left: 3px solid var(--red);
+      padding: 4px 0 4px 18px;
+      font-family: var(--f-display);
+      font-style: italic;
+      font-size: 1.35rem;
+      line-height: 1.28;
+      color: var(--ink);
+    }
+
+    .ledger-quote cite {
+      display: block;
+      margin-top: 10px;
+      font-family: var(--f-mono);
+      font-size: .62rem;
+      font-style: normal;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--ink-3);
+    }
+
+    .ledger-list {
+      border-top: 1px solid var(--rule);
+      padding-top: 16px;
+    }
+
+    .ledger-list li {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 14px;
+      padding: 11px 0;
+      border-bottom: 1px solid var(--rule-hair);
+      font-size: .9rem;
+      align-items: baseline;
+    }
+
+    .ledger-list li:last-child {
+      border-bottom: 0;
+    }
+
+    .ledger-list li b {
+      font-family: var(--f-mono);
+      font-size: .66rem;
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--red);
+    }
+
+    .ledger-list li span {
+      color: var(--ink-2);
+    }
+
+    /* ============================================================
+   § 02 · ARSENAL (Skills)
+   ============================================================ */
+    .arsenal {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0;
+      border: 1px solid var(--rule);
+      background: var(--paper-2);
+    }
+
+    .arsenal-cell {
+      padding: clamp(22px, 3vw, 34px);
+      border-right: 1px solid var(--rule-hair);
+      border-bottom: 1px solid var(--rule-hair);
+      position: relative;
+    }
+
+    .arsenal-cell:nth-child(2n) {
+      border-right: 0;
+    }
+
+    .arsenal-cell:nth-last-child(-n+2) {
+      border-bottom: 0;
+    }
+
+    .arsenal-cell h3 {
+      font-family: var(--f-display);
+      font-weight: 400;
+      font-size: 1.45rem;
+      letter-spacing: -.015em;
+      line-height: 1.1;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+    }
+
+    .arsenal-cell h3 .n {
+      font-family: var(--f-mono);
+      font-size: .62rem;
+      font-weight: 700;
+      letter-spacing: .18em;
+      color: var(--red);
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0;
+      border-top: 1px solid var(--rule-hair);
+    }
+
+    .chip {
+      font-family: var(--f-mono);
+      font-size: .72rem;
+      letter-spacing: .04em;
+      padding: 9px 13px 9px 0;
+      color: var(--ink-2);
+      border-bottom: 1px dashed var(--rule-hair);
+      margin-right: 14px;
+      transition: color .15s, transform .15s;
+    }
+
+    .chip:hover {
+      color: var(--red);
+      transform: translateX(2px);
+    }
+
+    .chip::before {
+      content: "· ";
+      color: var(--ink-4);
+    }
+
+    .bars {
+      margin-top: 34px;
+      border: 1px solid var(--rule);
+      padding: clamp(20px, 3vw, 32px);
+      background: var(--paper-2);
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px 40px;
+    }
+
+    @media (max-width:760px) {
+      .bars {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .bar-row {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 16px;
+      align-items: baseline;
+    }
+
+    .bar-row .lbl {
+      font-family: var(--f-body);
+      font-size: .94rem;
+    }
+
+    .bar-row .lbl i {
+      font-style: italic;
+      color: var(--ink-3);
+    }
+
+    .bar-row .pct {
+      font-family: var(--f-mono);
+      font-size: .68rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      color: var(--ink-3);
+    }
+
+    .bar-track {
+      grid-column: 1 / -1;
+      height: 6px;
+      background: var(--paper-3);
+      position: relative;
+      overflow: hidden;
+      margin-top: -6px;
+    }
+
+    .bar-fill {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 0;
+      background: var(--ink);
+      transition: width 1.1s cubic-bezier(.2, .8, .2, 1);
+    }
+
+    .bar-row:nth-child(3n) .bar-fill {
+      background: var(--red);
+    }
+
+    .bar-row:nth-child(3n+2) .bar-fill {
+      background: var(--blue);
+    }
+
+    /* ============================================================
+   § 03 · DISPATCHES (Projects)
+   ============================================================ */
+    .dispatch-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: clamp(20px, 3vw, 32px) clamp(20px, 3vw, 44px);
+    }
+
+    .dispatch {
+      position: relative;
+      padding-top: 20px;
+      border-top: 1px solid var(--rule);
+      display: flex;
+      flex-direction: column;
+      transition: transform .25s ease;
+    }
+
+    .dispatch:nth-child(1) {
+      grid-column: 1 / span 7;
+    }
+
+    .dispatch:nth-child(2) {
+      grid-column: 8 / span 5;
+      margin-top: 56px;
+    }
+
+    .dispatch:nth-child(3) {
+      grid-column: 1 / span 5;
+      margin-top: 36px;
+    }
+
+    .dispatch:nth-child(4) {
+      grid-column: 6 / span 7;
+    }
+
+    .dispatch:nth-child(5) {
+      grid-column: 1 / span 5;
+      margin-top: 22px;
+    }
+
+    .dispatch:nth-child(6) {
+      grid-column: 6 / span 7;
+      margin-top: 78px;
+    }
+
+    .dispatch::before {
+      content: "";
+      position: absolute;
+      top: -1px;
+      left: 0;
+      width: 0;
+      height: 3px;
+      background: var(--red);
+      transition: width .4s cubic-bezier(.2, .8, .2, 1);
+    }
+
+    .dispatch:hover::before {
+      width: 100%;
+    }
+
+    .disp-art {
+      aspect-ratio: 16 / 9;
+      background: var(--paper-2);
+      border: 1px solid var(--rule-hair);
+      margin-bottom: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .disp-art svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .disp-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-family: var(--f-mono);
+      font-size: .64rem;
+      font-weight: 500;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--ink-3);
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px dashed var(--rule-hair);
+    }
+
+    .disp-meta b {
+      color: var(--red);
+      font-weight: 700;
+    }
+
+    .dispatch h3 {
+      font-family: var(--f-display);
+      font-weight: 400;
+      font-size: clamp(1.45rem, 1.1rem + 1.2vw, 2.15rem);
+      line-height: 1.08;
+      letter-spacing: -.018em;
+      margin-bottom: 12px;
+      position: relative;
+      text-wrap: balance;
+    }
+
+    .dispatch h3 .mis {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dispatch h3 .mis::before {
+      content: attr(data-t);
+      position: absolute;
+      inset: 0;
+      color: var(--red);
+      transform: translate(2px, 2px);
+      opacity: 0;
+      transition: opacity .2s, transform .2s;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .dispatch:hover h3 .mis::before {
+      opacity: .85;
+      transform: translate(4px, 4px);
+    }
+
+    .dispatch:nth-child(even) h3 .mis::before {
+      color: var(--blue);
+    }
+
+    .dispatch p {
+      color: var(--ink-2);
+      font-size: .96rem;
+      text-wrap: pretty;
+      margin-bottom: 16px;
+    }
+
+    .disp-foot {
+      margin-top: auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding-top: 14px;
+      border-top: 1px solid var(--rule-hair);
+    }
+
+    .tag {
+      font-family: var(--f-mono);
+      font-size: .66rem;
+      letter-spacing: .08em;
+      padding: 4px 9px;
+      border: 1px solid var(--rule-hair);
+      color: var(--ink-3);
+      background: var(--paper-2);
+    }
+
+    .disp-links {
+      display: flex;
+      gap: 16px;
+      margin-top: 14px;
+    }
+
+    .disp-links a {
+      font-family: var(--f-mono);
+      font-size: .66rem;
+      font-weight: 500;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--ink);
+      border-bottom: 1px solid var(--ink);
+      padding-bottom: 2px;
+      transition: color .15s, border-color .15s;
+    }
+
+    .disp-links a:hover {
+      color: var(--red);
+      border-color: var(--red);
+    }
+
+    /* ============================================================
+   § 04 · CHRONOLOGY
+   ============================================================ */
+    .chron {
+      border-top: 1px solid var(--rule);
+    }
+
+    .chron-entry {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: clamp(20px, 3vw, 50px);
+      padding: 26px 0;
+      border-bottom: 1px solid var(--rule-hair);
+      align-items: start;
+    }
+
+    .chron-when {
+      font-family: var(--f-mono);
+      font-size: .7rem;
+      font-weight: 500;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--ink-3);
+      padding-top: 4px;
+    }
+
+    .chron-when b {
+      display: block;
+      color: var(--ink);
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .chron-what h3 {
+      font-family: var(--f-display);
+      font-weight: 400;
+      font-size: 1.5rem;
+      letter-spacing: -.015em;
+      line-height: 1.1;
+      margin-bottom: 4px;
+    }
+
+    .chron-what .where {
+      font-family: var(--f-body);
+      font-style: italic;
+      font-size: .98rem;
+      color: var(--red);
+      margin-bottom: 10px;
+    }
+
+    .chron-what p {
+      color: var(--ink-2);
+      font-size: .98rem;
+      text-wrap: pretty;
+      max-width: 64ch;
+    }
+
+    .creds {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+      border: 1px solid var(--rule);
+      background: var(--paper-2);
+    }
+
+    .cred {
+      padding: clamp(22px, 3vw, 32px);
+      border-right: 1px solid var(--rule-hair);
+      position: relative;
+    }
+
+    .cred:last-child {
+      border-right: 0;
+    }
+
+    .cred .yr {
+      font-family: var(--f-mono);
+      font-size: .66rem;
+      font-weight: 700;
+      letter-spacing: .18em;
+      color: var(--red);
+      margin-bottom: 14px;
+      display: block;
+    }
+
+    .cred h3 {
+      font-family: var(--f-display);
+      font-weight: 400;
+      font-size: 1.3rem;
+      line-height: 1.15;
+      letter-spacing: -.012em;
+      margin-bottom: 8px;
+    }
+
+    .cred .school {
+      font-family: var(--f-body);
+      font-style: italic;
+      font-size: .94rem;
+      color: var(--ink-3);
+      margin-bottom: 14px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--rule-hair);
+    }
+
+    .cred .gpa {
+      font-family: var(--f-mono);
+      font-size: .74rem;
+      letter-spacing: .06em;
+      color: var(--ink-2);
+    }
+
+    .cred .gpa b {
+      color: var(--ink);
+      font-weight: 700;
+      font-size: .9rem;
+    }
+
+    /* ============================================================
+   § 06 · TESTIMONY
+   ============================================================ */
+    .testimony {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: clamp(20px, 3vw, 44px);
+    }
+
+    .tcard {
+      grid-column: span 4;
+      border-top: 2px solid var(--ink);
+      padding-top: 18px;
+      position: relative;
+    }
+
+    .tcard:nth-child(2) {
+      grid-column: span 5;
+      margin-top: 38px;
+    }
+
+    .tcard:nth-child(3) {
+      grid-column: span 3;
+      margin-top: 0;
+    }
+
+    .tcard .mark {
+      font-family: var(--f-display);
+      font-style: italic;
+      font-size: 3rem;
+      line-height: .6;
+      color: var(--red);
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .tcard blockquote {
+      font-family: var(--f-body);
+      font-size: 1.02rem;
+      line-height: 1.5;
+      color: var(--ink);
+      text-wrap: pretty;
+      margin-bottom: 18px;
+    }
+
+    .tcard .who {
+      font-family: var(--f-mono);
+      font-size: .66rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--ink-3);
+    }
+
+    .tcard .who b {
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    /* ============================================================
+   § 07 · CORRESPONDENCE
+   ============================================================ */
+    .corr {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(30px, 4vw, 72px);
+      align-items: start;
+    }
+
+    .corr-l h2 {
+      font-family: var(--f-display);
+      font-weight: 400;
+      font-size: clamp(2rem, 1.4rem + 2.4vw, 3.2rem);
+      line-height: 1.02;
+      letter-spacing: -.02em;
+      margin-bottom: 22px;
+      text-wrap: balance;
+    }
+
+    .corr-l h2 em {
+      font-style: italic;
+      color: var(--blue);
+    }
+
+    .corr-l p {
+      color: var(--ink-2);
+      max-width: 42ch;
+      margin-bottom: 28px;
+      text-wrap: pretty;
+    }
+
+    .corr-list {
+      border-top: 1px solid var(--rule);
+    }
+
+    .corr-list a {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 16px;
+      align-items: center;
+      padding: 15px 0;
+      border-bottom: 1px solid var(--rule-hair);
+      transition: padding .2s, background .2s;
+      font-size: .94rem;
+    }
+
+    .corr-list a:hover {
+      padding-left: 8px;
+    }
+
+    .corr-list .k {
+      font-family: var(--f-mono);
+      font-size: .62rem;
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--red);
+      width: 80px;
+    }
+
+    .corr-list .v {
+      color: var(--ink);
+    }
+
+    .corr-list .arr {
+      font-family: var(--f-body);
+      font-size: 1.05rem;
+      color: var(--ink-3);
+      transition: transform .2s, color .2s;
+    }
+
+    .corr-list a:hover .arr {
+      transform: translateX(4px);
+      color: var(--red);
+    }
+
+    .letter {
+      background: var(--paper-2);
+      border: 1px solid var(--rule);
+      padding: clamp(22px, 3vw, 36px);
+      position: relative;
+      font-family: var(--f-body);
+    }
+
+    .letter::before {
+      content: "TELEGRAM · FORM 7-B";
+      position: absolute;
+      top: -9px;
+      left: 20px;
+      padding: 0 8px;
+      background: var(--paper);
+      font-family: var(--f-mono);
+      font-size: .6rem;
+      letter-spacing: .2em;
+      color: var(--ink-3);
+    }
+
+    .field {
+      display: grid;
+      gap: 6px;
+      margin-bottom: 14px;
+    }
+
+    .field label {
+      font-family: var(--f-mono);
+      font-size: .62rem;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--ink-3);
+    }
+
+    .field input,
+    .field textarea {
+      font-family: var(--f-body);
+      font-size: 1rem;
+      background: transparent;
+      border: 0;
+      border-bottom: 1px solid var(--rule);
+      padding: 8px 0;
+      color: var(--ink);
+      transition: border-color .2s;
+      min-height: 1.6em;
+      resize: vertical;
+    }
+
+    .field textarea {
+      min-height: 100px;
+      line-height: 1.5;
+    }
+
+    .field input:focus,
+    .field textarea:focus {
+      outline: none;
+      border-bottom-color: var(--red);
+      border-bottom-width: 2px;
+    }
+
+    .field input:user-invalid,
+    .field textarea:user-invalid {
+      border-bottom-color: var(--red);
+      background: linear-gradient(180deg, transparent 92%, rgba(214, 70, 47, .08) 92%);
+    }
+
+    .form-foot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+
+    .form-status {
+      font-family: var(--f-mono);
+      font-size: .66rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--ink-3);
+    }
+
+    /* ============================================================
+   COLOPHON
+   ============================================================ */
+    .colophon {
+      border-top: 3px solid var(--rule);
+      padding: 34px 0 44px;
+      font-family: var(--f-mono);
+      font-size: .66rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--ink-3);
+    }
+
+    .colo-in {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 30px;
+      align-items: start;
+    }
+
+    .colo-in>div+div {
+      padding-left: 30px;
+      border-left: 1px solid var(--rule-hair);
+    }
+
+    .colo-in h4 {
+      font-family: var(--f-mono);
+      font-size: .62rem;
+      font-weight: 700;
+      letter-spacing: .2em;
+      color: var(--red);
+      margin-bottom: 12px;
+    }
+
+    .colo-in ul li {
+      padding: 3px 0;
+    }
+
+    .colo-in ul a {
+      color: var(--ink-2);
+      transition: color .15s;
+    }
+
+    .colo-in ul a:hover {
+      color: var(--red);
+    }
+
+    .colo-mark {
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px solid var(--rule-hair);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .colo-mark .reg {
+      width: 20px;
+      height: 20px;
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    .colo-mark .reg::before,
+    .colo-mark .reg::after {
+      content: "";
+      position: absolute;
+      background: var(--ink-3);
+    }
+
+    .colo-mark .reg::before {
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      transform: translateX(-50%);
+    }
+
+    .colo-mark .reg::after {
+      top: 50%;
+      left: 0;
+      right: 0;
+      height: 1px;
+      transform: translateY(-50%);
+    }
+
+    /* ============================================================
+   REVEAL + TOAST
+   ============================================================ */
+    .rv {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity .8s ease var(--d, 0s), transform .8s ease var(--d, 0s);
+    }
+
+    .rv.on {
+      opacity: 1;
+      transform: none;
+    }
+
+    .toast {
+      position: fixed;
+      left: 50%;
+      bottom: 22px;
+      transform: translate(-50%, 20px);
+      background: var(--ink);
+      color: var(--paper-2);
+      padding: 12px 20px;
+      font-family: var(--f-mono);
+      font-size: .7rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      border-left: 3px solid var(--red);
+      opacity: 0;
+      pointer-events: none;
+      transition: .35s;
+      z-index: 1100;
+      max-width: 92vw;
+      text-align: center;
+    }
+
+    .toast.on {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+
+    /* ============================================================
+   RESPONSIVE
+   ============================================================ */
+    @media (max-width:960px) {
+      .mast-meta {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 12px;
+      }
+
+      .mast-meta>* {
+        border-right: 0;
+        padding-left: 0;
+      }
+
+      .mast-meta>*:nth-child(2) {
+        text-align: right;
+      }
+
+      .mast-meta>*:last-child {
+        text-align: left;
+      }
+
+      .mast-meta>*:nth-child(2n) {
+        padding-right: 0;
+      }
+
+      .mast-meta>*:nth-child(n+3) {
+        border-top: 1px solid var(--rule-hair);
+        padding-top: 12px;
+      }
+
+      .lead-copy {
+        grid-column: 1 / -1;
+      }
+
+      .lead-side-col {
+        grid-column: 1 / -1;
+        margin-top: 8px;
+      }
+
+      .portrait {
+        max-width: 280px;
+        margin-inline: 0;
+      }
+
+      .lead-side {
+        max-width: 520px;
+        margin-inline: 0;
+      }
+
+      .sec-title {
+        grid-column: 1 / -1;
+      }
+
+      .sec-desc {
+        grid-column: 1 / -1;
+        margin-top: 16px;
+      }
+
+      .ledger-body,
+      .ledger-aside {
+        grid-column: 1 / -1;
+      }
+
+      .ledger-aside {
+        margin-top: 8px;
+      }
+
+      .arsenal {
+        grid-template-columns: 1fr;
+      }
+
+      .arsenal-cell {
+        border-right: 0;
+      }
+
+      .arsenal-cell:nth-last-child(-n+2) {
+        border-bottom: 1px solid var(--rule-hair);
+      }
+
+      .arsenal-cell:last-child {
+        border-bottom: 0;
+      }
+
+      .dispatch:nth-child(n) {
+        grid-column: 1 / -1;
+        margin-top: 20px;
+      }
+
+      .dispatch:first-child {
+        margin-top: 0;
+      }
+
+      .chron-entry {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+
+      .creds {
+        grid-template-columns: 1fr;
+      }
+
+      .cred {
+        border-right: 0;
+        border-bottom: 1px solid var(--rule-hair);
+      }
+
+      .cred:last-child {
+        border-bottom: 0;
+      }
+
+      .testimony {
+        grid-template-columns: 1fr;
+        gap: 34px;
+      }
+
+      .tcard:nth-child(n) {
+        grid-column: 1 / -1;
+        margin-top: 0;
+      }
+
+      .corr {
+        grid-template-columns: 1fr;
+      }
+
+      .corr-list .k {
+        width: 64px;
+      }
+
+      .colo-in {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      .colo-in>div+div {
+        padding-left: 0;
+        border-left: 0;
+        padding-top: 20px;
+        border-top: 1px solid var(--rule-hair);
+      }
+
+      .mini-nav {
+        display: none;
+      }
+    }
+
+    @media (max-width:560px) {
+      h1.name {
+        font-size: clamp(2.9rem, 18vw, 4.5rem);
+      }
+
+      h1.name .line--2 {
+        margin-left: 20px;
+      }
+
+      .mast-name .leaf .smallcaps:first-child {
+        display: none;
+      }
+
+      .lead-cta .btn {
+        padding: 11px 16px;
+        font-size: .66rem;
+      }
+
+      .bars {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+
+      .dispatch h3 {
+        font-size: 1.4rem;
+      }
+
+      .portrait {
+        max-width: 240px;
+      }
+
+      .lead-copy p.intro::first-letter {
+        font-size: 3.4em;
+      }
+    }
+
+    @media (prefers-reduced-motion:reduce) {
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: .001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .001ms !important;
+      }
+
+      .ticker-track {
+        animation: none;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<nav><div class="container nav">
-  <a class="logo" href="#top">AH<span>.</span></a>
-  <div class="links"><a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div>
-</div></nav>
 
-<main id="top">
-<section class="hero">
-<div class="container hero-grid">
-  <div>
-    <div class="kicker">Computer Science & Engineering</div>
-    <h1>Building <em>useful digital experiences</em> with code.</h1>
-    <p>I'm Aseer Hamim Mahi, a CSE student at East West University focused on mobile application development, frontend web architecture, and database-driven systems.</p>
-    <div class="buttons"><a class="btn primary" href="#projects">View Projects ↓</a><a class="btn" href="mailto:aseerhamim1993@gmail.com">Let's Connect</a></div>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ============================================================
+     MASTHEAD
+     ============================================================ -->
+  <header class="masthead" id="top">
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>Aseer Hamim Mahi</span>
+        <span>Portfolio · Edition 001</span>
+        <span>Dhaka, Bangladesh</span>
+        <span>MMXXVI</span>
+        <span>Software Developer</span>
+        <span>Mobile · Frontend · Data</span>
+        <span>aseerhamim1993@gmail.com</span>
+        <span>Tel · +880 1618 894286</span>
+        <span>East West University</span>
+        <span>Aseer Hamim Mahi</span>
+        <span>Portfolio · Edition 001</span>
+        <span>Dhaka, Bangladesh</span>
+        <span>MMXXVI</span>
+        <span>Software Developer</span>
+        <span>Mobile · Frontend · Data</span>
+        <span>aseerhamim1993@gmail.com</span>
+        <span>Tel · +880 1618 894286</span>
+        <span>East West University</span>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="mast-name">
+        <div class="leaf smallcaps">
+          <span>Vol. 01 · No. 001</span>
+          <span class="reg" aria-hidden="true"></span>
+          <span>The Dispatches · Printed in Dhaka</span>
+        </div>
+
+        <h1 class="name">
+          <span class="line line--1">Aseer</span>
+          <span class="line line--2">Hamim</span>
+          <span class="line line--3">Mahi</span>
+        </h1>
+      </div>
+
+      <div class="mast-meta">
+        <span>Filed from · <b>Dhaka, BD</b></span>
+        <span>Edition · <b>MMXXVI</b></span>
+        <span>Section · <b>Seven Dispatches</b></span>
+        <span>Status · <b>Available</b></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================================
+     STICKY MINI-BAR
+     ============================================================ -->
+  <div class="mini" id="mini">
+    <div class="mini-in">
+      <a class="mini-name" href="#top">Aseer Hamim Mahi</a>
+      <nav class="mini-nav" aria-label="Primary">
+        <a href="#ledger">Ledger</a>
+        <a href="#arsenal">Arsenal</a>
+        <a href="#dispatches">Dispatches</a>
+        <a href="#chronology">Chronology</a>
+        <a href="#correspondence">Correspondence</a>
+      </nav>
+    </div>
   </div>
-  <div class="profile-card">
-    <div class="avatar">AHM</div>
-    <div class="card-meta"><div><small>Based in</small><br>Dhaka, Bangladesh</div><div><small>Focus</small><br>Software Development</div></div>
-  </div>
-</div>
-</section>
 
-<section id="about"><div class="container">
-<div class="section-head"><div><div class="eyebrow">01 — About</div><h2>A developer who likes solving real problems.</h2></div><p>From mobile apps to real-time dashboards, I enjoy turning ideas into practical, user-centered software.</p></div>
-<div class="about"><div class="panel"><p>Results-driven CSE student with hands-on experience building real-time data tracking systems, decision-support utilities, and interactive dashboards. My work combines frontend development, backend services, databases, and practical problem solving.</p><div class="stats"><div class="stat"><strong>3.00</strong><span>CGPA / 4.00</span></div><div class="stat"><strong>3+</strong><span>Featured Projects</span></div><div class="stat"><strong>2+</strong><span>Tech Clubs</span></div></div></div>
-<div class="panel"><p><strong style="color:white">Current direction</strong><br>Building stronger foundations in software development while exploring mobile applications, web architecture, APIs, databases, and data-driven systems.</p><br><p><strong style="color:white">What I bring</strong><br>Team coordination, communication, event operations, hands-on technical learning, and a practical approach to building software.</p></div></div>
-</div></section>
+  <main id="main">
 
-<section id="projects"><div class="container">
-<div class="section-head"><div><div class="eyebrow">02 — Selected Work</div><h2>Projects with purpose.</h2></div><p>A selection of academic and personal projects highlighted in my resume.</p></div>
-<div class="projects">
-<article class="project"><div class="project-num">01 / DASHBOARD</div><h3>Smart Live Appliance Energy Dashboard</h3><div class="type">IoT Energy Monitoring System</div><p>Real-time appliance monitoring dashboard tracking voltage, current, power, energy usage, operating cost and efficiency. Includes an Express.js backend, MongoDB Atlas storage, analytics, cost projections, visualization and remote appliance control.</p><div class="tags"><span class="tag">HTML</span><span class="tag">Tailwind</span><span class="tag">JavaScript</span><span class="tag">Node.js</span><span class="tag">MongoDB</span></div></article>
-<article class="project"><div class="project-num">02 / MOBILE</div><h3>Blood Donors Management System</h3><div class="type">Mobile Application</div><p>A mobile application for real-time donor tracking, secure registration and localized blood-request matching, using Firebase services for instant synchronization and efficient blood-group search.</p><div class="tags"><span class="tag">Java</span><span class="tag">Android Studio</span><span class="tag">XML</span><span class="tag">Firebase</span></div></article>
-<article class="project"><div class="project-num">03 / DECISION SUPPORT</div><h3>LabScan</h3><div class="type">Computer Hardware Lifecycle Decision Support</div><p>A web-based decision-support system that evaluates computer hardware using a weighted multi-criteria scoring model, with risk scoring, filtering, search and CSV export for data-driven lifecycle decisions.</p><div class="tags"><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span><span class="tag">CSV</span></div></article>
-</div></div></section>
+    <!-- ============================================================
+     FRONT PAGE
+     ============================================================ -->
+    <section class="lead" aria-labelledby="lead-title">
+      <div class="wrap">
+        <h2 id="lead-title" style="position:absolute;left:-9999px">Introduction</h2>
+        <div class="lead-in">
 
-<section id="skills"><div class="container">
-<div class="section-head"><div><div class="eyebrow">03 — Toolkit</div><h2>Tools I work with.</h2></div></div>
-<div class="skills">
-<div class="skillbox"><h3>Programming</h3><div class="chips"><span class="chip">Java</span><span class="chip">JavaScript</span><span class="chip">C</span><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">SQL</span></div></div>
-<div class="skillbox"><h3>Development & Platforms</h3><div class="chips"><span class="chip">Android Studio</span><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">Firebase</span><span class="chip">Netlify</span></div></div>
-<div class="skillbox"><h3>Focus Areas</h3><div class="chips"><span class="chip">Mobile App Development</span><span class="chip">Frontend Web Design</span><span class="chip">Database Management</span><span class="chip">Real-time Systems</span></div></div>
-<div class="skillbox"><h3>Professional Strengths</h3><div class="chips"><span class="chip">Team Coordination</span><span class="chip">Operations</span><span class="chip">Communication</span><span class="chip">Technical Workshops</span></div></div>
-</div></div></section>
+          <div class="lead-copy">
+            <p class="kicker">An introduction, filed from Dhaka</p>
 
-<section id="experience"><div class="container">
-<div class="section-head"><div><div class="eyebrow">04 — Experience</div><h2>Leadership beyond the classroom.</h2></div><p>Hands-on club involvement strengthened my coordination, communication and event-operations experience.</p></div>
-<div class="timeline">
-<div class="role"><div class="date">JAN 2025 — PRESENT</div><h3>Senior Volunteer · East West University Robotics Club</h3><p>Co-managed operations and execution for EWU National RoboFest 2024 Sub Committee activities. Supervised volunteers, monitored attendance, tracked participation and supported club events and booths.</p></div>
-<div class="role"><div class="date">JUN 2023 — DEC 2024</div><h3>Probationary Volunteer · East West University Robotics Club</h3><p>Contributed to internal club operations, booth responsibilities and hands-on technical robotics workshops.</p></div>
-<div class="role"><div class="date">JAN 2024 — OCT 2025</div><h3>Senior Volunteer · East West University Computer Programming Club</h3><p>Supervised volunteers, managed communication channels and helped execute workshops and competitions.</p></div>
-</div></div></section>
+            <p class="intro">A computer science &amp; engineering student who builds <strong>mobile apps</strong>,
+              <strong>frontend experiences</strong>, and <strong>database-driven systems</strong> — currently finishing
+              a B.Sc. at East West University and shipping side projects in the gaps between lectures, lab reports, and
+              club meetings.</p>
 
-<section><div class="container">
-<div class="section-head"><div><div class="eyebrow">05 — Education</div><h2>Academic foundation.</h2></div></div>
-<div class="edu">
-<div class="edu-card"><h3>East West University</h3><p>B.Sc. in Computer Science & Engineering<br>2022 — Present<br>CGPA: 3.00 / 4.00</p></div>
-<div class="edu-card"><h3>Dania University College</h3><p>Higher Secondary Certificate — Science<br>2021<br>GPA: 5.00 / 5.00</p></div>
-<div class="edu-card"><h3>Bright School & College</h3><p>Secondary School Certificate — Science<br>2019<br>GPA: 4.61 / 5.00</p></div>
-</div></div></section>
+            <p>I'm Aseer Hamim Mahi, based in Dhaka, Bangladesh, and I've been writing code long enough to have opinions
+              about it. My work sits at the meeting point of three things I genuinely enjoy: the tight feedback loop of
+              a mobile app, the visual precision of a well-built interface, and the quiet satisfaction of a database
+              schema that still makes sense six months later.</p>
 
-<section id="contact"><div class="container"><div class="contact">
-<div><div class="eyebrow">06 — Contact</div><h2>Have an idea worth building?</h2><p>Let's connect and talk about software, projects, collaboration or opportunities.</p></div>
-<a class="btn primary" href="mailto:aseerhamim1993@gmail.com">aseerhamim1993@gmail.com ↗</a>
-</div></div></section>
-</main>
+            <p>Most of what I know came from building things with a deadline attached. A blood-donor matching app in
+              Java and Firebase, because a classroom exercise wasn't enough. A real-time appliance energy dashboard in
+              Node.js and MongoDB, because I wanted to watch live voltage and current numbers move across a screen and
+              understand every layer between the sensor and the pixel. A decision-support tool that scores computer
+              hardware against weighted criteria, a personal finance tracker with budgets and charts, and a WebSocket
+              chat app that exists mostly because I refused to accept that "real-time" was magic.</p>
 
-<footer><div class="container">© 2026 Aseer Hamim Mahi · Dhaka, Bangladesh</div></footer>
+            <p>Alongside the code, I've spent two years coordinating people. As a senior volunteer with the EWU Robotics
+              Club and the EWU Computer Programming Club, I've supervised volunteer teams, tracked attendance and
+              participation, managed communication channels, and helped execute everything from inter-department
+              competitions to national robofest sub-committees. It turns out event logistics and software architecture
+              are the same discipline wearing different clothes: figure out what actually needs to happen, then make
+              sure it happens.</p>
+
+            <p>I care about software that works the first time and reads clean the tenth. Small functions, honest names,
+              predictable behaviour when someone pokes at it. I'd rather ship something boring and correct than
+              something clever and fragile — and I'd rather tell you I don't know than guess at an answer.</p>
+
+            <p>Right now I'm deepening the fundamentals: REST API design, real-time system architecture, UI/UX
+              principles, and the cloud deployment basics that turn a localhost project into something a stranger can
+              actually use. I'm open to internships, junior developer roles, freelance builds, and collaborations where
+              the problem is interesting and the people are straightforward.</p>
+
+            <p>If any of that sounds like a fit, the contact details are a few sections down — and I answer quickly.</p>
+
+            <div class="sig">
+              <span>Filed from Dhaka · Open to work</span>
+              <span>— A.H.M.</span>
+            </div>
+          </div>
+
+          <div class="lead-side-col">
+
+            <div class="portrait">
+              <div class="portrait-frame">
+                <img src="https://i.ibb.co/b9YTQhj/mahir.jpg" alt="Portrait of Aseer Hamim Mahi" width="600"
+                  height="750" loading="eager" decoding="async" fetchpriority="high" />
+              </div>
+              <div class="portrait-caption">
+                <em>Aseer Hamim Mahi</em>
+                <span>Fig. 001 · MMXXVI</span>
+              </div>
+            </div>
+
+            <aside class="lead-side" aria-label="At a glance">
+              <dl>
+                <div>
+                  <dt>CGPA</dt>
+                  <dd>3.00<small>of 4.00</small></dd>
+                </div>
+                <div>
+                  <dt>Projects</dt>
+                  <dd>06<small>featured</small></dd>
+                </div>
+                <div>
+                  <dt>Clubs</dt>
+                  <dd>02<small>volunteering</small></dd>
+                </div>
+                <div>
+                  <dt>Based</dt>
+                  <dd>Dhaka<small>Bangladesh</small></dd>
+                </div>
+              </dl>
+            </aside>
+
+          </div>
+
+          <div class="lead-cta">
+            <a class="btn btn--solid" href="#dispatches">Read the dispatches <span class="arr">→</span></a>
+            <a class="btn" href="#correspondence">Send a telegram <span class="arr">↗</span></a>
+            <a class="btn" href="tel:+8801618894286">Call · +880 1618 894286 <span class="arr">☎</span></a>
+            <a class="btn btn--red" href="mailto:aseerhamim1993@gmail.com">aseerhamim1993@gmail.com</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     § 01 · LEDGER (About)
+     ============================================================ -->
+    <section id="ledger" aria-labelledby="ledger-title">
+      <div class="wrap">
+
+        <header class="sec-head rv">
+          <div class="sec-top">
+            <span class="sec-num">§ 01</span>
+            <span class="sec-dot">·</span>
+            <span class="sec-cat">Ledger</span>
+            <span class="sec-folio">Fol. 01</span>
+          </div>
+          <div class="sec-bottom">
+            <h2 id="ledger-title" class="sec-title">The developer, <em>in his own words.</em></h2>
+            <p class="sec-desc">Who he is, what he does, and the short version of how he got here.</p>
+          </div>
+        </header>
+
+        <div class="ledger-grid">
+
+          <div class="ledger-body rv">
+            <p>I build software that solves a specific problem for a specific person, and I try to do it the boring way.
+              Small functions. Clear names. Systems that behave predictably when someone pokes at them.</p>
+            <p>My range runs from <strong>Java &amp; Android</strong> on the mobile side, through <strong>JavaScript and
+                Node.js</strong> for the web and backend, down into <strong>MongoDB and Firebase</strong> for storage.
+              I've built real-time IoT dashboards, blood-donor matching apps, decision-support tools, and a chat app
+              that mostly exists because I wanted to understand WebSockets.</p>
+            <p>Outside of code, I coordinate volunteers. Two clubs, two years, a lot of event logistics. Turns out
+              that's the same skill as good software: you learn what actually needs to happen, and you make sure it
+              does.</p>
+          </div>
+
+          <aside class="ledger-aside rv" style="--d:.1s">
+
+            <blockquote class="ledger-quote">
+              Good software is mostly good decisions made early.
+              <cite>· Working note, 2025</cite>
+            </blockquote>
+
+            <ul class="ledger-list">
+              <li><b>Now</b><span>Building stronger foundations in software development · mobile apps, APIs,
+                  databases.</span></li>
+              <li><b>Also</b><span>Team coordination, event ops, technical workshops, volunteer leadership.</span></li>
+              <li><b>Next</b><span>REST APIs, real-time systems, UI/UX fundamentals, cloud deployment basics.</span>
+              </li>
+            </ul>
+
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     § 02 · ARSENAL (Skills)
+     ============================================================ -->
+    <section id="arsenal" aria-labelledby="arsenal-title">
+      <div class="wrap">
+
+        <header class="sec-head rv">
+          <div class="sec-top">
+            <span class="sec-num">§ 02</span>
+            <span class="sec-dot">·</span>
+            <span class="sec-cat">Arsenal</span>
+            <span class="sec-folio">Fol. 02</span>
+          </div>
+          <div class="sec-bottom">
+            <h2 id="arsenal-title" class="sec-title">Tools, <em>platforms, languages.</em></h2>
+            <p class="sec-desc">A working inventory · the languages I write, the platforms I deploy to, and the areas I
+              keep returning to.</p>
+          </div>
+        </header>
+
+        <div class="arsenal rv">
+
+          <div class="arsenal-cell">
+            <h3><span class="n">I.</span> Programming</h3>
+            <div class="chips">
+              <span class="chip">Java</span><span class="chip">JavaScript</span><span class="chip">C</span>
+              <span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">SQL</span>
+            </div>
+          </div>
+
+          <div class="arsenal-cell">
+            <h3><span class="n">II.</span> Platforms &amp; Tools</h3>
+            <div class="chips">
+              <span class="chip">Android Studio</span><span class="chip">Node.js</span><span
+                class="chip">Express.js</span>
+              <span class="chip">Firebase</span><span class="chip">MongoDB</span><span class="chip">Git</span>
+              <span class="chip">GitHub</span><span class="chip">Netlify</span><span class="chip">Tailwind CSS</span>
+            </div>
+          </div>
+
+          <div class="arsenal-cell">
+            <h3><span class="n">III.</span> Focus Areas</h3>
+            <div class="chips">
+              <span class="chip">Mobile App Development</span>
+              <span class="chip">Frontend Web Design</span>
+              <span class="chip">Database Management</span>
+              <span class="chip">Real-time Systems</span>
+              <span class="chip">REST APIs</span>
+              <span class="chip">UI/UX Fundamentals</span>
+            </div>
+          </div>
+
+          <div class="arsenal-cell">
+            <h3><span class="n">IV.</span> Professional Strengths</h3>
+            <div class="chips">
+              <span class="chip">Team Coordination</span>
+              <span class="chip">Event Operations</span>
+              <span class="chip">Communication</span>
+              <span class="chip">Technical Workshops</span>
+              <span class="chip">Volunteer Leadership</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="bars rv" style="--d:.12s" aria-label="Core proficiency">
+          <div class="bar-row">
+            <span class="lbl">Java &amp; Android <i>· primary</i></span>
+            <span class="pct">85%</span>
+            <div class="bar-track">
+              <div class="bar-fill" data-w="85"></div>
+            </div>
+          </div>
+          <div class="bar-row">
+            <span class="lbl">JavaScript &amp; Frontend</span>
+            <span class="pct">80%</span>
+            <div class="bar-track">
+              <div class="bar-fill" data-w="80"></div>
+            </div>
+          </div>
+          <div class="bar-row">
+            <span class="lbl">MongoDB &amp; Firebase</span>
+            <span class="pct">78%</span>
+            <div class="bar-track">
+              <div class="bar-fill" data-w="78"></div>
+            </div>
+          </div>
+          <div class="bar-row">
+            <span class="lbl">Node.js &amp; Express</span>
+            <span class="pct">72%</span>
+            <div class="bar-track">
+              <div class="bar-fill" data-w="72"></div>
+            </div>
+          </div>
+          <div class="bar-row">
+            <span class="lbl">UI &amp; Design Sense <i>· growing</i></span>
+            <span class="pct">70%</span>
+            <div class="bar-track">
+              <div class="bar-fill" data-w="70"></div>
+            </div>
+          </div>
+          <div class="bar-row">
+            <span class="lbl">SQL &amp; Data Modeling</span>
+            <span class="pct">68%</span>
+            <div class="bar-track">
+              <div class="bar-fill" data-w="68"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+     § 03 · DISPATCHES (Projects)
+     ============================================================ -->
+    <section id="dispatches" aria-labelledby="dispatches-title">
+      <div class="wrap">
+
+        <header class="sec-head rv">
+          <div class="sec-top">
+            <span class="sec-num">§ 03</span>
+            <span class="sec-dot">·</span>
+            <span class="sec-cat">Dispatches</span>
+            <span class="sec-folio">Fol. 03</span>
+          </div>
+          <div class="sec-bottom">
+            <h2 id="dispatches-title" class="sec-title">Six projects, <em>built on purpose.</em></h2>
+            <p class="sec-desc">Selected academic, personal, and collaborative work. Each one shipped, each one taught
+              me something specific.</p>
+          </div>
+        </header>
+
+        <div class="dispatch-grid">
+
+          <!-- 01 -->
+          <article class="dispatch rv">
+            <div class="disp-art" aria-hidden="true">
+              <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg">
+                <rect width="320" height="180" fill="#F2ECDC" />
+                <circle cx="140" cy="90" r="60" fill="none" stroke="#D6462F" stroke-width="2" />
+                <circle cx="180" cy="90" r="60" fill="none" stroke="#2B4A8F" stroke-width="2" />
+                <circle cx="160" cy="90" r="42" fill="none" stroke="#17140F" stroke-width="1" stroke-dasharray="2 4" />
+                <line x1="160" y1="90" x2="160" y2="30" stroke="#17140F" stroke-width="2" />
+                <circle cx="160" cy="90" r="4" fill="#D6462F" />
+                <text x="20" y="170" font-family="JetBrains Mono, monospace" font-size="8" fill="#6B6256"
+                  letter-spacing="2">LIVE · 1.42 kWh</text>
+              </svg>
+            </div>
+            <div class="disp-meta"><b>No. 01</b><span>IoT · Full-stack</span></div>
+            <h3><span class="mis" data-t="Smart Live Appliance Energy Dashboard">Smart Live Appliance Energy
+                Dashboard</span></h3>
+            <p>Real-time appliance monitoring dashboard tracking voltage, current, power, energy usage, operating cost
+              and efficiency. Express.js backend, MongoDB Atlas storage, analytics, cost projections, remote appliance
+              control.</p>
+            <div class="disp-foot">
+              <span class="tag">HTML</span><span class="tag">Tailwind</span><span class="tag">JavaScript</span>
+              <span class="tag">Node.js</span><span class="tag">MongoDB</span>
+            </div>
+            <div class="disp-links">
+              <a href="#">Live ↗</a><a href="#">Code ↗</a>
+            </div>
+          </article>
+
+          <!-- 02 -->
+          <article class="dispatch rv" style="--d:.05s">
+            <div class="disp-art" aria-hidden="true">
+              <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg">
+                <rect width="320" height="180" fill="#F2ECDC" />
+                <circle cx="160" cy="80" r="50" fill="#D6462F" opacity=".85" />
+                <circle cx="160" cy="100" r="50" fill="#2B4A8F" opacity=".75" />
+                <rect x="152" y="60" width="16" height="60" fill="#EBE4D2" />
+                <rect x="134" y="82" width="52" height="16" fill="#EBE4D2" />
+                <text x="20" y="170" font-family="JetBrains Mono, monospace" font-size="8" fill="#6B6256"
+                  letter-spacing="2">DONOR MATCH · O+</text>
+              </svg>
+            </div>
+            <div class="disp-meta"><b>No. 02</b><span>Mobile</span></div>
+            <h3><span class="mis" data-t="Blood Donors Management System">Blood Donors Management System</span></h3>
+            <p>Android app for real-time donor tracking, secure registration and localized blood-request matching, using
+              Firebase for instant synchronization and efficient blood-group search.</p>
+            <div class="disp-foot">
+              <span class="tag">Java</span><span class="tag">Android Studio</span>
+              <span class="tag">XML</span><span class="tag">Firebase</span>
+            </div>
+            <div class="disp-links"><a href="#">Code ↗</a></div>
+          </article>
+
+          <!-- 03 -->
+          <article class="dispatch rv" style="--d:.1s">
+            <div class="disp-art" aria-hidden="true">
+              <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg">
+                <rect width="320" height="180" fill="#F2ECDC" />
+                <g stroke="#17140F" stroke-width="1">
+                  <line x1="40" y1="40" x2="280" y2="40" />
+                  <line x1="40" y1="70" x2="280" y2="70" />
+                  <line x1="40" y1="100" x2="280" y2="100" />
+                  <line x1="40" y1="130" x2="280" y2="130" />
+                  <line x1="70" y1="30" x2="70" y2="150" />
+                  <line x1="110" y1="30" x2="110" y2="150" />
+                  <line x1="150" y1="30" x2="150" y2="150" />
+                  <line x1="190" y1="30" x2="190" y2="150" />
+                  <line x1="230" y1="30" x2="230" y2="150" />
+                </g>
+                <rect x="70" y="40" width="40" height="30" fill="#2B4A8F" />
+                <rect x="150" y="100" width="40" height="30" fill="#D6462F" />
+                <rect x="230" y="70" width="40" height="30" fill="#2B4A8F" opacity=".7" />
+                <text x="20" y="170" font-family="JetBrains Mono, monospace" font-size="8" fill="#6B6256"
+                  letter-spacing="2">SCORE · 7.4 / 10</text>
+              </svg>
+            </div>
+            <div class="disp-meta"><b>No. 03</b><span>Decision Support</span></div>
+            <h3><span class="mis" data-t="LabScan">LabScan</span></h3>
+            <p>Web-based decision-support system scoring computer hardware with a weighted multi-criteria model, risk
+              scoring, filtering, search and CSV export.</p>
+            <div class="disp-foot">
+              <span class="tag">HTML5</span><span class="tag">CSS3</span>
+              <span class="tag">JavaScript</span><span class="tag">CSV</span>
+            </div>
+            <div class="disp-links"><a href="#">Live ↗</a><a href="#">Code ↗</a></div>
+          </article>
+
+          <!-- 04 -->
+          <article class="dispatch rv" style="--d:.15s">
+            <div class="disp-art" aria-hidden="true">
+              <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg">
+                <rect width="320" height="180" fill="#F2ECDC" />
+                <g fill="#17140F">
+                  <rect x="50" y="110" width="26" height="40" />
+                  <rect x="88" y="90" width="26" height="60" />
+                  <rect x="126" y="70" width="26" height="80" />
+                  <rect x="164" y="55" width="26" height="95" />
+                </g>
+                <rect x="202" y="40" width="26" height="110" fill="#D6462F" />
+                <path d="M50 110 L88 90 L126 70 L164 55 L202 40" stroke="#2B4A8F" stroke-width="2" fill="none" />
+                <circle cx="202" cy="40" r="4" fill="#2B4A8F" />
+                <text x="20" y="170" font-family="JetBrains Mono, monospace" font-size="8" fill="#6B6256"
+                  letter-spacing="2">+18.4% MoM</text>
+              </svg>
+            </div>
+            <div class="disp-meta"><b>No. 04</b><span>Web · Finance</span></div>
+            <h3><span class="mis" data-t="FinTrack · Personal Finance Tracker">FinTrack · Personal Finance
+                Tracker</span></h3>
+            <p>Personal finance tracker with categorized expenses, monthly budgets, interactive charts, and CSV export.
+              Local-first storage with optional cloud sync and a clean dashboard UI.</p>
+            <div class="disp-foot">
+              <span class="tag">JavaScript</span><span class="tag">Chart.js</span>
+              <span class="tag">LocalStorage</span><span class="tag">CSS Grid</span>
+            </div>
+            <div class="disp-links"><a href="#">Live ↗</a><a href="#">Code ↗</a></div>
+          </article>
+
+          <!-- 05 -->
+          <article class="dispatch rv" style="--d:.2s">
+            <div class="disp-art" aria-hidden="true">
+              <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg">
+                <rect width="320" height="180" fill="#F2ECDC" />
+                <g stroke="#2B4A8F" stroke-width="1.5" fill="none">
+                  <line x1="80" y1="60" x2="160" y2="90" />
+                  <line x1="160" y1="90" x2="240" y2="50" />
+                  <line x1="160" y1="90" x2="240" y2="130" />
+                  <line x1="80" y1="60" x2="90" y2="130" />
+                  <line x1="90" y1="130" x2="160" y2="90" />
+                </g>
+                <circle cx="80" cy="60" r="10" fill="#D6462F" />
+                <circle cx="160" cy="90" r="12" fill="#17140F" />
+                <circle cx="240" cy="50" r="9" fill="#2B4A8F" />
+                <circle cx="240" cy="130" r="9" fill="#2B4A8F" />
+                <circle cx="90" cy="130" r="9" fill="#D6462F" />
+                <text x="20" y="170" font-family="JetBrains Mono, monospace" font-size="8" fill="#6B6256"
+                  letter-spacing="2">CAMPUS · ONLINE</text>
+              </svg>
+            </div>
+            <div class="disp-meta"><b>No. 05</b><span>Full-stack</span></div>
+            <h3><span class="mis" data-t="CampusConnect">CampusConnect</span></h3>
+            <p>Student community platform for campus announcements, club activities, event coordination and peer
+              Q&amp;A. Role-based access, threaded discussions, lightweight notifications.</p>
+            <div class="disp-foot">
+              <span class="tag">Node.js</span><span class="tag">Express</span>
+              <span class="tag">MongoDB</span><span class="tag">EJS</span>
+            </div>
+            <div class="disp-links"><a href="#">Code ↗</a></div>
+          </article>
+
+          <!-- 06 -->
+          <article class="dispatch rv" style="--d:.25s">
+            <div class="disp-art" aria-hidden="true">
+              <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg">
+                <rect width="320" height="180" fill="#F2ECDC" />
+                <rect x="60" y="50" width="120" height="60" rx="14" fill="#2B4A8F" />
+                <rect x="140" y="80" width="120" height="60" rx="14" fill="#D6462F" opacity=".9" />
+                <circle cx="90" cy="80" r="4" fill="#EBE4D2" />
+                <circle cx="110" cy="80" r="4" fill="#EBE4D2" />
+                <circle cx="130" cy="80" r="4" fill="#EBE4D2" />
+                <circle cx="170" cy="110" r="4" fill="#EBE4D2" />
+                <circle cx="190" cy="110" r="4" fill="#EBE4D2" />
+                <text x="20" y="170" font-family="JetBrains Mono, monospace" font-size="8" fill="#6B6256"
+                  letter-spacing="2">SOCKET · LIVE</text>
+              </svg>
+            </div>
+            <div class="disp-meta"><b>No. 06</b><span>Real-time</span></div>
+            <h3><span class="mis" data-t="Realtime Chat">Realtime Chat</span></h3>
+            <p>WebSocket-powered chat with rooms, typing indicators, message history and online presence. Built to
+              explore real-time client-server architecture and event-driven UI updates.</p>
+            <div class="disp-foot">
+              <span class="tag">Node.js</span><span class="tag">Socket.IO</span>
+              <span class="tag">JavaScript</span><span class="tag">HTML/CSS</span>
+            </div>
+            <div class="disp-links"><a href="#">Code ↗</a></div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     § 04 · CHRONOLOGY (Experience)
+     ============================================================ -->
+    <section id="chronology" aria-labelledby="chron-title">
+      <div class="wrap">
+
+        <header class="sec-head rv">
+          <div class="sec-top">
+            <span class="sec-num">§ 04</span>
+            <span class="sec-dot">·</span>
+            <span class="sec-cat">Chronology</span>
+            <span class="sec-folio">Fol. 04</span>
+          </div>
+          <div class="sec-bottom">
+            <h2 id="chron-title" class="sec-title">Leadership <em>beyond the classroom.</em></h2>
+            <p class="sec-desc">Two clubs, three roles, a lot of event logistics · the coordination work that underpins
+              everything else.</p>
+          </div>
+        </header>
+
+        <div class="chron rv">
+
+          <div class="chron-entry">
+            <div class="chron-when"><b>Jan 2025</b>to Present</div>
+            <div class="chron-what">
+              <h3>Senior Volunteer</h3>
+              <div class="where">East West University Robotics Club</div>
+              <p>Co-managed operations and execution for EWU National RoboFest 2024 Sub Committee activities. Supervised
+                volunteers, monitored attendance, tracked participation, supported club events and booths.</p>
+            </div>
+          </div>
+
+          <div class="chron-entry">
+            <div class="chron-when"><b>Jan 2024</b>to Oct 2025</div>
+            <div class="chron-what">
+              <h3>Senior Volunteer</h3>
+              <div class="where">East West University Computer Programming Club</div>
+              <p>Supervised volunteers, managed communication channels, and helped execute workshops and
+                inter-department competitions.</p>
+            </div>
+          </div>
+
+          <div class="chron-entry">
+            <div class="chron-when"><b>Jun 2023</b>to Dec 2024</div>
+            <div class="chron-what">
+              <h3>Probationary Volunteer</h3>
+              <div class="where">East West University Robotics Club</div>
+              <p>Contributed to internal club operations, booth responsibilities, and hands-on technical robotics
+                workshops.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     § 05 · CREDENTIALS (Education)
+     ============================================================ -->
+    <section id="credentials" aria-labelledby="cred-title">
+      <div class="wrap">
+
+        <header class="sec-head rv">
+          <div class="sec-top">
+            <span class="sec-num">§ 05</span>
+            <span class="sec-dot">·</span>
+            <span class="sec-cat">Credentials</span>
+            <span class="sec-folio">Fol. 05</span>
+          </div>
+          <div class="sec-bottom">
+            <h2 id="cred-title" class="sec-title">Academic <em>record.</em></h2>
+            <p class="sec-desc">Three institutions, one straight line · from Dhaka's science classrooms to a CSE degree
+              at East West.</p>
+          </div>
+        </header>
+
+        <div class="creds rv">
+          <div class="cred">
+            <span class="yr">2022 to Present</span>
+            <h3>B.Sc. Computer Science &amp; Engineering</h3>
+            <div class="school">East West University, Dhaka</div>
+            <div class="gpa">CGPA <b>3.00</b> / 4.00</div>
+          </div>
+          <div class="cred">
+            <span class="yr">2021</span>
+            <h3>Higher Secondary Certificate · Science</h3>
+            <div class="school">Dania University College</div>
+            <div class="gpa">GPA <b>5.00</b> / 5.00</div>
+          </div>
+          <div class="cred">
+            <span class="yr">2019</span>
+            <h3>Secondary School Certificate · Science</h3>
+            <div class="school">Bright School &amp; College</div>
+            <div class="gpa">GPA <b>4.61</b> / 5.00</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+     § 06 · TESTIMONY
+     ============================================================ -->
+    <section id="testimony" aria-labelledby="test-title">
+      <div class="wrap">
+
+        <header class="sec-head rv">
+          <div class="sec-top">
+            <span class="sec-num">§ 06</span>
+            <span class="sec-dot">·</span>
+            <span class="sec-cat">Testimony</span>
+            <span class="sec-folio">Fol. 06</span>
+          </div>
+          <div class="sec-bottom">
+            <h2 id="test-title" class="sec-title">On the record, <em>from people who've worked with him.</em></h2>
+            <p class="sec-desc">Notes from teammates, club leads, and collaborators.</p>
+          </div>
+        </header>
+
+        <div class="testimony">
+
+          <article class="tcard rv">
+            <span class="mark" aria-hidden="true">"</span>
+            <blockquote>Aseer is one of the most dependable volunteers I've worked with. He shows up prepared,
+              communicates clearly, and takes ownership of whatever he's assigned.</blockquote>
+            <div class="who"><b>Rafid H.</b> · Club Coordinator</div>
+          </article>
+
+          <article class="tcard rv" style="--d:.08s">
+            <span class="mark" aria-hidden="true">"</span>
+            <blockquote>Working with Aseer on the IoT dashboard was smooth. He handled the frontend and the data flow,
+              and kept the UI clean even when the backend kept changing.</blockquote>
+            <div class="who"><b>Sadia K.</b> · Project Teammate</div>
+          </article>
+
+          <article class="tcard rv" style="--d:.16s">
+            <span class="mark" aria-hidden="true">"</span>
+            <blockquote>Great teammate, always asking the right questions, and quick to pick up new tools when a project
+              needs them.</blockquote>
+            <div class="who"><b>Tanvir A.</b> · Co-volunteer</div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+     § 07 · CORRESPONDENCE
+     ============================================================ -->
+    <section id="correspondence" aria-labelledby="corr-title">
+      <div class="wrap">
+
+        <header class="sec-head rv">
+          <div class="sec-top">
+            <span class="sec-num">§ 07</span>
+            <span class="sec-dot">·</span>
+            <span class="sec-cat">Correspondence</span>
+            <span class="sec-folio">Fol. 07</span>
+          </div>
+        </header>
+
+        <div class="corr">
+
+          <div class="corr-l rv">
+            <h2 id="corr-title">Have an idea <em>worth building?</em></h2>
+            <p>Write in about a project, a role, a collaboration, or just a question. I usually reply within a day.</p>
+
+            <div class="corr-list">
+              <a href="mailto:aseerhamim1993@gmail.com">
+                <span class="k">Email</span>
+                <span class="v">aseerhamim1993@gmail.com</span>
+                <span class="arr">↗</span>
+              </a>
+              <a href="tel:+8801618894286">
+                <span class="k">Phone</span>
+                <span class="v">+880 1618 894286</span>
+                <span class="arr">↗</span>
+              </a>
+              <a href="https://github.com/aseerhamim" target="_blank" rel="noopener">
+                <span class="k">GitHub</span>
+                <span class="v">github.com/aseerhamim</span>
+                <span class="arr">↗</span>
+              </a>
+              <a href="https://www.linkedin.com/in/aseerhamim" target="_blank" rel="noopener">
+                <span class="k">LinkedIn</span>
+                <span class="v">linkedin.com/in/aseerhamim</span>
+                <span class="arr">↗</span>
+              </a>
+              <a href="#top">
+                <span class="k">Filed from</span>
+                <span class="v">Dhaka, Bangladesh</span>
+                <span class="arr">↑</span>
+              </a>
+            </div>
+          </div>
+
+          <form class="letter rv" id="letterForm" style="--d:.1s" novalidate>
+            <div class="field">
+              <label for="from">From</label>
+              <input id="from" name="from" type="text" autocomplete="name" placeholder="Your name" required />
+            </div>
+            <div class="field">
+              <label for="reply">Reply to</label>
+              <input id="reply" name="reply" type="email" autocomplete="email" placeholder="you@example.com" required />
+            </div>
+            <div class="field">
+              <label for="body">Message</label>
+              <textarea id="body" name="body" rows="5" placeholder="Tell me about the project, role, or idea…"
+                required></textarea>
+            </div>
+            <div class="form-foot">
+              <button class="btn btn--solid" type="submit">Send transmission <span class="arr">→</span></button>
+              <span class="form-status" id="formStatus" role="status" aria-live="polite"></span>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+     COLOPHON
+     ============================================================ -->
+  <footer class="colophon">
+    <div class="wrap">
+      <div class="colo-in">
+        <div>
+          <h4>The Dispatches</h4>
+          <ul>
+            <li>Edition 001 · MMXXVI</li>
+            <li>Composed by Aseer Hamim Mahi</li>
+            <li>Set in Instrument Serif, Newsreader &amp; JetBrains Mono</li>
+            <li>Printed in Dhaka, Bangladesh</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Sections</h4>
+          <ul>
+            <li><a href="#ledger">§ 01 · Ledger</a></li>
+            <li><a href="#arsenal">§ 02 · Arsenal</a></li>
+            <li><a href="#dispatches">§ 03 · Dispatches</a></li>
+            <li><a href="#chronology">§ 04 · Chronology</a></li>
+            <li><a href="#credentials">§ 05 · Credentials</a></li>
+            <li><a href="#testimony">§ 06 · Testimony</a></li>
+            <li><a href="#correspondence">§ 07 · Correspondence</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Elsewhere</h4>
+          <ul>
+            <li><a href="https://github.com/aseerhamim" target="_blank" rel="noopener">GitHub ↗</a></li>
+            <li><a href="https://www.linkedin.com/in/aseerhamim" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+            <li><a href="mailto:aseerhamim1993@gmail.com">Email ↗</a></li>
+            <li><a href="tel:+8801618894286">Phone · +880 1618 894286 ↗</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="colo-mark">
+        <span class="reg" aria-hidden="true"></span>
+        <span>© <span id="year"></span> Aseer Hamim Mahi · All rights reserved</span>
+        <span class="reg" aria-hidden="true"></span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    (function () {
+      "use strict";
+
+      var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      /* YEAR */
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      /* STICKY MINI-BAR */
+      var mini = document.getElementById("mini");
+      var masthead = document.querySelector(".masthead");
+      if ("IntersectionObserver" in window) {
+        var miniIO = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) {
+            mini.classList.toggle("on", !e.isIntersecting);
+          });
+        }, { rootMargin: "-20px 0px 0px 0px", threshold: 0 });
+        miniIO.observe(masthead);
+      }
+
+      /* REVEAL ON SCROLL */
+      if ("IntersectionObserver" in window && !reduce) {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) {
+            if (e.isIntersecting) {
+              e.target.classList.add("on");
+              io.unobserve(e.target);
+            }
+          });
+        }, { threshold: 0.12, rootMargin: "0px 0px -60px 0px" });
+        document.querySelectorAll(".rv").forEach(function (el) { io.observe(el); });
+      } else {
+        document.querySelectorAll(".rv").forEach(function (el) { el.classList.add("on"); });
+      }
+
+      /* SKILL BARS */
+      if ("IntersectionObserver" in window) {
+        var barIO = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) {
+            if (e.isIntersecting) {
+              var f = e.target;
+              f.style.width = f.getAttribute("data-w") + "%";
+              barIO.unobserve(f);
+            }
+          });
+        }, { threshold: 0.4 });
+        document.querySelectorAll(".bar-fill").forEach(function (el) { barIO.observe(el); });
+      } else {
+        document.querySelectorAll(".bar-fill").forEach(function (el) {
+          el.style.width = el.getAttribute("data-w") + "%";
+        });
+      }
+
+      /* SMOOTH ANCHORS */
+      document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+        a.addEventListener("click", function (e) {
+          var href = a.getAttribute("href");
+          if (href === "#" || href.length < 2) return;
+          var target = document.querySelector(href);
+          if (!target) return;
+          e.preventDefault();
+          var y = target.getBoundingClientRect().top + window.scrollY - 76;
+          window.scrollTo({ top: y, behavior: reduce ? "auto" : "smooth" });
+        });
+      });
+
+      /* FORM */
+      var form = document.getElementById("letterForm");
+      var status = document.getElementById("formStatus");
+      var toast = document.getElementById("toast");
+      var toastT = null;
+
+      function showToast(msg) {
+        toast.textContent = msg;
+        toast.classList.add("on");
+        clearTimeout(toastT);
+        toastT = setTimeout(function () { toast.classList.remove("on"); }, 4600);
+      }
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        var name = document.getElementById("from").value.trim();
+        var email = document.getElementById("reply").value.trim();
+        var msg = document.getElementById("body").value.trim();
+
+        if (!name || !email || !msg) {
+          status.textContent = "Please complete all three fields.";
+          return;
+        }
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+          status.textContent = "That email looks malformed.";
+          return;
+        }
+
+        status.textContent = "Transmission dispatched.";
+        showToast("Thank you, " + name + " · opening your mail client.");
+
+        var subject = encodeURIComponent("Dispatches · message from " + name);
+        var body = encodeURIComponent(
+          msg + "\n\nFiled by " + name + "\nReply to: " + email
+        );
+        window.location.href = "mailto:aseerhamim1993@gmail.com?subject=" + subject + "&body=" + body;
+
+        setTimeout(function () { form.reset(); status.textContent = ""; }, 2400);
+      });
+
+    })();
+  </script>
+
 </body>
+
 </html>
