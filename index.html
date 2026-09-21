@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portfolio of Aseer Hamim Mahi — CSE student, mobile app and frontend developer.">
+<title>Aseer Hamim Mahi | Portfolio</title>
+<style>
+:root{
+  --bg:#070a12;--surface:#0e1422;--surface2:#121a2b;--text:#f5f7fb;--muted:#a9b3c7;
+  --line:rgba(255,255,255,.09);--accent:#7c5cff;--accent2:#23d5ab;--max:1160px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:
+radial-gradient(circle at 85% 10%,rgba(124,92,255,.18),transparent 28rem),
+radial-gradient(circle at 10% 35%,rgba(35,213,171,.08),transparent 25rem),var(--bg);
+color:var(--text);line-height:1.65}
+a{color:inherit;text-decoration:none}.container{width:min(calc(100% - 40px),var(--max));margin:auto}
+nav{position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(7,10,18,.72);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:800;letter-spacing:-.04em;font-size:1.1rem}.logo span{color:var(--accent)}
+.links{display:flex;gap:28px;color:var(--muted);font-size:.92rem}.links a:hover{color:white}
+.hero{min-height:100vh;display:grid;place-items:center;padding-top:90px}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:70px;align-items:center}
+.kicker{color:var(--accent2);font-weight:700;letter-spacing:.13em;text-transform:uppercase;font-size:.78rem;margin-bottom:18px}
+h1{font-size:clamp(3rem,7vw,6.2rem);line-height:.98;letter-spacing:-.07em;max-width:800px}
+h1 em{font-style:normal;background:linear-gradient(100deg,#fff 10%,#a991ff 55%,#5fe5c5);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{margin:25px 0 30px;color:var(--muted);font-size:1.08rem;max-width:670px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap}.btn{padding:12px 19px;border:1px solid var(--line);border-radius:12px;font-weight:700;font-size:.9rem}
+.btn.primary{background:var(--text);color:#080b12;border-color:white}.btn:hover{transform:translateY(-2px)}
+.profile-card{background:linear-gradient(145deg,rgba(255,255,255,.08),rgba(255,255,255,.025));border:1px solid var(--line);border-radius:28px;padding:28px;box-shadow:0 25px 80px rgba(0,0,0,.35)}
+.avatar{height:240px;border-radius:20px;display:grid;place-items:center;background:
+linear-gradient(135deg,rgba(124,92,255,.85),rgba(35,213,171,.45));font-size:5rem;font-weight:900;letter-spacing:-.08em}
+.card-meta{display:flex;justify-content:space-between;gap:10px;margin-top:20px}.card-meta small{color:var(--muted)}
+section{padding:105px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:42px}
+.eyebrow{color:var(--accent);font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.14em}
+h2{font-size:clamp(2rem,4vw,3.4rem);letter-spacing:-.055em;line-height:1.05;margin-top:8px}.section-head p{max-width:430px;color:var(--muted)}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:24px}.panel{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:28px}.panel p{color:var(--muted)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}.stat{padding:20px;border-radius:16px;background:var(--surface2);border:1px solid var(--line)}.stat strong{font-size:1.7rem}.stat span{display:block;color:var(--muted);font-size:.8rem}
+.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.project{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:25px;display:flex;flex-direction:column;min-height:390px;transition:.25s}.project:hover{transform:translateY(-5px);border-color:rgba(124,92,255,.5)}
+.project-num{font-size:.75rem;color:var(--accent2);font-weight:800}.project h3{font-size:1.35rem;margin:28px 0 8px;line-height:1.2}.project .type{color:var(--muted);font-size:.85rem;margin-bottom:18px}.project p{color:var(--muted);font-size:.92rem}.tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:auto;padding-top:24px}.tag{font-size:.72rem;padding:5px 9px;border-radius:999px;background:#182238;color:#cbd4e7}
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.skillbox{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:25px}.skillbox h3{margin-bottom:14px}.chips{display:flex;flex-wrap:wrap;gap:8px}.chip{border:1px solid var(--line);padding:7px 11px;border-radius:10px;color:#d7ddec;font-size:.82rem;background:rgba(255,255,255,.025)}
+.timeline{border-left:1px solid var(--line);margin-left:9px;padding-left:30px}.role{position:relative;margin-bottom:38px}.role:before{content:"";position:absolute;width:10px;height:10px;border-radius:50%;background:var(--accent);left:-36px;top:9px;box-shadow:0 0 0 6px var(--bg)}.role h3{font-size:1.2rem}.role .date{color:var(--accent2);font-size:.8rem;font-weight:700}.role p{color:var(--muted);margin-top:8px}
+.edu{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.edu-card{padding:23px;background:var(--surface);border:1px solid var(--line);border-radius:18px}.edu-card h3{font-size:1rem}.edu-card p{color:var(--muted);font-size:.87rem;margin-top:6px}
+.contact{background:linear-gradient(135deg,rgba(124,92,255,.15),rgba(35,213,171,.07));border:1px solid var(--line);border-radius:28px;padding:45px;display:flex;align-items:center;justify-content:space-between;gap:30px}.contact p{color:var(--muted);margin-top:8px}.contact a{display:inline-block;margin-top:18px}
+footer{padding:35px 0;color:#737d92;border-top:1px solid var(--line);font-size:.82rem}
+@media(max-width:850px){.hero-grid,.about,.projects,.skills,.edu{grid-template-columns:1fr}.hero{padding-top:120px}.links{display:none}.profile-card{max-width:500px}.section-head{display:block}.section-head p{margin-top:15px}.contact{display:block}}
+</style>
+</head>
+<body>
+<nav><div class="container nav">
+  <a class="logo" href="#top">AH<span>.</span></a>
+  <div class="links"><a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div>
+</div></nav>
+
+<main id="top">
+<section class="hero">
+<div class="container hero-grid">
+  <div>
+    <div class="kicker">Computer Science & Engineering</div>
+    <h1>Building <em>useful digital experiences</em> with code.</h1>
+    <p>I'm Aseer Hamim Mahi, a CSE student at East West University focused on mobile application development, frontend web architecture, and database-driven systems.</p>
+    <div class="buttons"><a class="btn primary" href="#projects">View Projects ↓</a><a class="btn" href="mailto:aseerhamim1993@gmail.com">Let's Connect</a></div>
+  </div>
+  <div class="profile-card">
+    <div class="avatar">AHM</div>
+    <div class="card-meta"><div><small>Based in</small><br>Dhaka, Bangladesh</div><div><small>Focus</small><br>Software Development</div></div>
+  </div>
+</div>
+</section>
+
+<section id="about"><div class="container">
+<div class="section-head"><div><div class="eyebrow">01 — About</div><h2>A developer who likes solving real problems.</h2></div><p>From mobile apps to real-time dashboards, I enjoy turning ideas into practical, user-centered software.</p></div>
+<div class="about"><div class="panel"><p>Results-driven CSE student with hands-on experience building real-time data tracking systems, decision-support utilities, and interactive dashboards. My work combines frontend development, backend services, databases, and practical problem solving.</p><div class="stats"><div class="stat"><strong>3.00</strong><span>CGPA / 4.00</span></div><div class="stat"><strong>3+</strong><span>Featured Projects</span></div><div class="stat"><strong>2+</strong><span>Tech Clubs</span></div></div></div>
+<div class="panel"><p><strong style="color:white">Current direction</strong><br>Building stronger foundations in software development while exploring mobile applications, web architecture, APIs, databases, and data-driven systems.</p><br><p><strong style="color:white">What I bring</strong><br>Team coordination, communication, event operations, hands-on technical learning, and a practical approach to building software.</p></div></div>
+</div></section>
+
+<section id="projects"><div class="container">
+<div class="section-head"><div><div class="eyebrow">02 — Selected Work</div><h2>Projects with purpose.</h2></div><p>A selection of academic and personal projects highlighted in my resume.</p></div>
+<div class="projects">
+<article class="project"><div class="project-num">01 / DASHBOARD</div><h3>Smart Live Appliance Energy Dashboard</h3><div class="type">IoT Energy Monitoring System</div><p>Real-time appliance monitoring dashboard tracking voltage, current, power, energy usage, operating cost and efficiency. Includes an Express.js backend, MongoDB Atlas storage, analytics, cost projections, visualization and remote appliance control.</p><div class="tags"><span class="tag">HTML</span><span class="tag">Tailwind</span><span class="tag">JavaScript</span><span class="tag">Node.js</span><span class="tag">MongoDB</span></div></article>
+<article class="project"><div class="project-num">02 / MOBILE</div><h3>Blood Donors Management System</h3><div class="type">Mobile Application</div><p>A mobile application for real-time donor tracking, secure registration and localized blood-request matching, using Firebase services for instant synchronization and efficient blood-group search.</p><div class="tags"><span class="tag">Java</span><span class="tag">Android Studio</span><span class="tag">XML</span><span class="tag">Firebase</span></div></article>
+<article class="project"><div class="project-num">03 / DECISION SUPPORT</div><h3>LabScan</h3><div class="type">Computer Hardware Lifecycle Decision Support</div><p>A web-based decision-support system that evaluates computer hardware using a weighted multi-criteria scoring model, with risk scoring, filtering, search and CSV export for data-driven lifecycle decisions.</p><div class="tags"><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span><span class="tag">CSV</span></div></article>
+</div></div></section>
+
+<section id="skills"><div class="container">
+<div class="section-head"><div><div class="eyebrow">03 — Toolkit</div><h2>Tools I work with.</h2></div></div>
+<div class="skills">
+<div class="skillbox"><h3>Programming</h3><div class="chips"><span class="chip">Java</span><span class="chip">JavaScript</span><span class="chip">C</span><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">SQL</span></div></div>
+<div class="skillbox"><h3>Development & Platforms</h3><div class="chips"><span class="chip">Android Studio</span><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">Firebase</span><span class="chip">Netlify</span></div></div>
+<div class="skillbox"><h3>Focus Areas</h3><div class="chips"><span class="chip">Mobile App Development</span><span class="chip">Frontend Web Design</span><span class="chip">Database Management</span><span class="chip">Real-time Systems</span></div></div>
+<div class="skillbox"><h3>Professional Strengths</h3><div class="chips"><span class="chip">Team Coordination</span><span class="chip">Operations</span><span class="chip">Communication</span><span class="chip">Technical Workshops</span></div></div>
+</div></div></section>
+
+<section id="experience"><div class="container">
+<div class="section-head"><div><div class="eyebrow">04 — Experience</div><h2>Leadership beyond the classroom.</h2></div><p>Hands-on club involvement strengthened my coordination, communication and event-operations experience.</p></div>
+<div class="timeline">
+<div class="role"><div class="date">JAN 2025 — PRESENT</div><h3>Senior Volunteer · East West University Robotics Club</h3><p>Co-managed operations and execution for EWU National RoboFest 2024 Sub Committee activities. Supervised volunteers, monitored attendance, tracked participation and supported club events and booths.</p></div>
+<div class="role"><div class="date">JUN 2023 — DEC 2024</div><h3>Probationary Volunteer · East West University Robotics Club</h3><p>Contributed to internal club operations, booth responsibilities and hands-on technical robotics workshops.</p></div>
+<div class="role"><div class="date">JAN 2024 — OCT 2025</div><h3>Senior Volunteer · East West University Computer Programming Club</h3><p>Supervised volunteers, managed communication channels and helped execute workshops and competitions.</p></div>
+</div></div></section>
+
+<section><div class="container">
+<div class="section-head"><div><div class="eyebrow">05 — Education</div><h2>Academic foundation.</h2></div></div>
+<div class="edu">
+<div class="edu-card"><h3>East West University</h3><p>B.Sc. in Computer Science & Engineering<br>2022 — Present<br>CGPA: 3.00 / 4.00</p></div>
+<div class="edu-card"><h3>Dania University College</h3><p>Higher Secondary Certificate — Science<br>2021<br>GPA: 5.00 / 5.00</p></div>
+<div class="edu-card"><h3>Bright School & College</h3><p>Secondary School Certificate — Science<br>2019<br>GPA: 4.61 / 5.00</p></div>
+</div></div></section>
+
+<section id="contact"><div class="container"><div class="contact">
+<div><div class="eyebrow">06 — Contact</div><h2>Have an idea worth building?</h2><p>Let's connect and talk about software, projects, collaboration or opportunities.</p></div>
+<a class="btn primary" href="mailto:aseerhamim1993@gmail.com">aseerhamim1993@gmail.com ↗</a>
+</div></div></section>
+</main>
+
+<footer><div class="container">© 2026 Aseer Hamim Mahi · Dhaka, Bangladesh</div></footer>
+</body>
+</html>
